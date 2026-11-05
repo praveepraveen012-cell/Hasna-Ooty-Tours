@@ -1,3 +1,4 @@
+import { assetUrl } from '../utils/assets';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -60,7 +61,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-elevated border-4 border-white">
               <img
-                src="/images/ooty3.png"
+                src={assetUrl("/images/ooty3.png")}
                 alt="Scenic Ooty Valley Hasna Tours"
                 className="w-full h-[400px] sm:h-[460px] object-cover"
               />

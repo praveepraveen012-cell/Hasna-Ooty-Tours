@@ -1,3 +1,4 @@
+import { assetUrl } from '../utils/assets';
 export const VEHICLES = [
   {
     id: 'innova-crysta',
@@ -7,7 +8,7 @@ export const VEHICLES = [
     seatsNumber: 7,
     luggage: '4 Large Bags + Small Handbags',
     ac: true,
-    image: '/images/innova-crysta.png',
+    image: assetUrl('/images/innova-crysta.png'),
     badge: 'Most Popular for Families & Groups',
     features: [
       '7 Seater Luxury Reclining Captain Seats',
@@ -28,7 +29,7 @@ export const VEHICLES = [
     seatsNumber: 7,
     luggage: '3 Large Bags + Backpacks',
     ac: true,
-    image: '/images/toyota-remove.png',
+    image: assetUrl('/images/toyota-remove.png'),
     badge: 'Reliable Workhorse',
     features: [
       '7 Seater Capacity (Comfortable 6 Adults + 1 Child)',
@@ -49,7 +50,7 @@ export const VEHICLES = [
     seatsNumber: 5,
     luggage: '2 Large Trolleys + Handbags',
     ac: true,
-    image: '/images/swift.png',
+    image: assetUrl('/images/swift.png'),
     badge: 'Best Value for Couples & Small Families',
     features: [
       '5 Seater (Driver + 4 Passengers)',
@@ -70,7 +71,7 @@ export const VEHICLES = [
     seatsNumber: 5,
     luggage: '3 Large Trolleys + Daypacks',
     ac: true,
-    image: '/images/etios.png',
+    image: assetUrl('/images/etios.png'),
     badge: 'Maximum Legroom & Boot Space',
     features: [
       '5 Seater with Best-in-Class Rear Seat Legroom',
@@ -91,7 +92,7 @@ export const VEHICLES = [
     seatsNumber: 13,
     luggage: '10+ Large Bags',
     ac: true,
-    image: '/images/innova-crysta.png', // fallback
+    image: assetUrl('/images/innova-crysta.png'), // fallback
     badge: 'Ultimate Choice for Large Groups',
     features: [
       '12+1 Pushback Reclining Seats',

@@ -1,3 +1,4 @@
+import { assetUrl } from '../utils/assets';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Compass, ShieldCheck, MapPin, Star, Sparkles } from 'lucide-react';
@@ -16,7 +17,7 @@ export default function HeroSection({ onSearch }) {
       {/* Background Hero Image with Dark Forest Gradient */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/ooty3.png"
+          src={assetUrl("/images/ooty3.png")}
           alt="Ooty Nilgiri Tea Plantations and Valley"
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-subtle-zoom"
         />

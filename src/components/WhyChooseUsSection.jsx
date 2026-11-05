@@ -1,3 +1,4 @@
+import { assetUrl } from '../utils/assets';
 import React from 'react';
 import { ShieldCheck, UserCheck, Sliders, DollarSign, Clock, ThumbsUp, Sparkles, CheckCircle2 } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
@@ -44,7 +45,7 @@ export default function WhyChooseUsSection() {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-elevated border-4 border-white">
               <img
-                src="/images/Avalanche-Lake.jpg"
+                src={assetUrl("/images/Avalanche-Lake.jpg")}
                 alt="Avalanche Lake scenic tour with Hasna Ooty Tours"
                 className="w-full h-[440px] sm:h-[480px] object-cover"
               />

@@ -1,3 +1,4 @@
+import { assetUrl } from '../utils/assets';
 export const PACKAGES = [
   {
     id: 'ooty-classic-sightseeing-full-day',
@@ -10,14 +11,14 @@ export const PACKAGES = [
     badge: 'Bestseller',
     rating: 4.9,
     reviewCount: 340,
-    image: '/images/ooty-tours.jpg',
+    image: assetUrl('/images/ooty-tours.jpg'),
     gallery: [
-      '/images/ooty-tours.jpg',
-      '/images/Ooty-Lake.png',
-      '/images/Botanical-Garden-1.png',
-      '/images/Doddabetta.png',
-      '/images/Rose-Garden.jpg',
-      '/images/Tea-Factory.png',
+      assetUrl('/images/ooty-tours.jpg'),
+      assetUrl('/images/Ooty-Lake.png'),
+      assetUrl('/images/Botanical-Garden-1.png'),
+      assetUrl('/images/Doddabetta.png'),
+      assetUrl('/images/Rose-Garden.jpg'),
+      assetUrl('/images/Tea-Factory.png'),
     ],
     shortDescription: 'Explore the Queen of Hill Stations in the comfort of a dedicated private car with a courteous local driver.',
     overview: 'Discover the breathtaking beauty of Ooty with our exclusive private car sightseeing tour. From tranquil boating in Ooty Lake to panoramic views from Doddabetta Peak, our expert local driver ensures a hassle-free, flexible, and memorable journey through the lush green valleys of the Nilgiris.',
@@ -31,12 +32,12 @@ export const PACKAGES = [
       'Needle Rock Viewpoint'
     ],
     placesCovered: [
-      { name: 'Ooty Lake & Boathouse', desc: 'Serene artificial lake built in 1824, ideal for scenic pedal boating and leisure walking.', img: '/images/Ooty-Lake.png' },
-      { name: 'Botanical Garden', desc: 'Sprawling 55-acre terraced garden featuring over 650 species of exotic trees, ferns, and bonsai.', img: '/images/Botanical-Garden-1.png' },
-      { name: 'Doddabetta Peak', desc: 'Highest mountain in the Nilgiri hills (2,637 m) offering 360-degree views of the valleys.', img: '/images/Doddabetta.png' },
-      { name: 'Government Rose Garden', desc: 'One of the largest rose collections in India with more than 20,000 varieties blooming across terraces.', img: '/images/Rose-Garden.jpg' },
-      { name: 'Tea Factory & Museum', desc: 'Live demonstration of Nilgiri orthodox CTC tea manufacturing and fresh tea tasting.', img: '/images/Tea-Factory.png' },
-      { name: 'Chocolate Factory', desc: 'Watch artisanal handmade chocolates crafted and sample genuine Nilgiri cocoa delicacies.', img: '/images/Chocolate-Factory.jpg' }
+      { name: 'Ooty Lake & Boathouse', desc: 'Serene artificial lake built in 1824, ideal for scenic pedal boating and leisure walking.', img: assetUrl('/images/Ooty-Lake.png') },
+      { name: 'Botanical Garden', desc: 'Sprawling 55-acre terraced garden featuring over 650 species of exotic trees, ferns, and bonsai.', img: assetUrl('/images/Botanical-Garden-1.png') },
+      { name: 'Doddabetta Peak', desc: 'Highest mountain in the Nilgiri hills (2,637 m) offering 360-degree views of the valleys.', img: assetUrl('/images/Doddabetta.png') },
+      { name: 'Government Rose Garden', desc: 'One of the largest rose collections in India with more than 20,000 varieties blooming across terraces.', img: assetUrl('/images/Rose-Garden.jpg') },
+      { name: 'Tea Factory & Museum', desc: 'Live demonstration of Nilgiri orthodox CTC tea manufacturing and fresh tea tasting.', img: assetUrl('/images/Tea-Factory.png') },
+      { name: 'Chocolate Factory', desc: 'Watch artisanal handmade chocolates crafted and sample genuine Nilgiri cocoa delicacies.', img: assetUrl('/images/Chocolate-Factory.jpg') }
     ],
     vehicleOptions: ['Swift Dzire (5 Seater)', 'Toyota Etios (5 Seater)', 'Toyota Innova (7 Seater)', 'Innova Crysta (7 Seater)'],
     itinerary: [
@@ -82,13 +83,13 @@ export const PACKAGES = [
     badge: 'Family Favorite',
     rating: 4.9,
     reviewCount: 215,
-    image: '/images/ooty3.png',
+    image: assetUrl('/images/ooty3.png'),
     gallery: [
-      '/images/ooty3.png',
-      '/images/pykara.jpg',
-      '/images/Avalanche-Lake.jpg',
-      '/images/Botanical-Garden-1.png',
-      '/images/Ooty-Lake.png',
+      assetUrl('/images/ooty3.png'),
+      assetUrl('/images/pykara.jpg'),
+      assetUrl('/images/Avalanche-Lake.jpg'),
+      assetUrl('/images/Botanical-Garden-1.png'),
+      assetUrl('/images/Ooty-Lake.png'),
     ],
     shortDescription: 'The perfect 3-day family getaway covering iconic Ooty landmarks, Pykara waterfalls, and picturesque valley lakes.',
     overview: 'Looking for a relaxing, family-friendly hill station vacation? Our 3 Days / 2 Nights Ooty Family Tour is designed for all age groups. Enjoy private car travel, leisurely visits to Ooty Lake, Pykara Waterfalls, Botanical Garden, tea estates, and family-friendly viewpoints.',
@@ -102,12 +103,12 @@ export const PACKAGES = [
       'Pine Forest & Shooting Spot'
     ],
     placesCovered: [
-      { name: 'Ooty Lake', desc: 'Tranquil water body perfect for family boat rides.', img: '/images/Ooty-Lake.png' },
-      { name: 'Pykara Falls & Lake', desc: 'Gentle cascades through pine glades and thrilling speedboat rides.', img: '/images/pykara.jpg' },
-      { name: 'Doddabetta Peak', desc: 'Nilgiris highest vantage point with telescope house.', img: '/images/Doddabetta.png' },
-      { name: 'Avalanche Lake', desc: 'Untouched scenic lake surrounded by rolling shoals.', img: '/images/Avalanche-Lake.jpg' },
-      { name: 'Tea Factory & Museum', desc: 'Interactive factory visit showcasing orthodox tea leaves.', img: '/images/Tea-Factory.png' },
-      { name: 'Needle Rock Viewpoint', desc: 'Spectacular 360-degree landscape overlooking Gudalur valley.', img: '/images/Needle-Rock-Viewpoint.jpg' }
+      { name: 'Ooty Lake', desc: 'Tranquil water body perfect for family boat rides.', img: assetUrl('/images/Ooty-Lake.png') },
+      { name: 'Pykara Falls & Lake', desc: 'Gentle cascades through pine glades and thrilling speedboat rides.', img: assetUrl('/images/pykara.jpg') },
+      { name: 'Doddabetta Peak', desc: 'Nilgiris highest vantage point with telescope house.', img: assetUrl('/images/Doddabetta.png') },
+      { name: 'Avalanche Lake', desc: 'Untouched scenic lake surrounded by rolling shoals.', img: assetUrl('/images/Avalanche-Lake.jpg') },
+      { name: 'Tea Factory & Museum', desc: 'Interactive factory visit showcasing orthodox tea leaves.', img: assetUrl('/images/Tea-Factory.png') },
+      { name: 'Needle Rock Viewpoint', desc: 'Spectacular 360-degree landscape overlooking Gudalur valley.', img: assetUrl('/images/Needle-Rock-Viewpoint.jpg') }
     ],
     vehicleOptions: ['Innova Crysta (7 Seater)', 'Toyota Innova (7 Seater)', 'Swift Dzire (5 Seater)', 'Toyota Etios (5 Seater)'],
     itinerary: [
@@ -153,13 +154,13 @@ export const PACKAGES = [
     badge: 'Romantic Choice',
     rating: 5.0,
     reviewCount: 184,
-    image: '/images/Avalanche-Lake.jpg',
+    image: assetUrl('/images/Avalanche-Lake.jpg'),
     gallery: [
-      '/images/Avalanche-Lake.jpg',
-      '/images/ooty-tours.jpg',
-      '/images/Rose-Garden.jpg',
-      '/images/pykara.jpg',
-      '/images/kunnur.jpg',
+      assetUrl('/images/Avalanche-Lake.jpg'),
+      assetUrl('/images/ooty-tours.jpg'),
+      assetUrl('/images/Rose-Garden.jpg'),
+      assetUrl('/images/pykara.jpg'),
+      assetUrl('/images/kunnur.jpg'),
     ],
     shortDescription: 'Cherish every moment together with misty hill viewpoints, quiet couple boat rides, and private scenic chauffeur drives.',
     overview: 'Start your new journey together with a romantic and blissful honeymoon tour! Hasna Ooty Tours crafts intimate, serene journeys designed with privacy and luxury in mind. Experience misty mornings, private rides through pine glades, sunset viewpoints at Doddabetta, and peaceful lakes.',
@@ -173,11 +174,11 @@ export const PACKAGES = [
       'Scenic Photoshoot Locations in Pine Forest'
     ],
     placesCovered: [
-      { name: 'Avalanche Sanctuary Lake', desc: 'Tranquil emerald waters fringed by orchids and magnolias.', img: '/images/Avalanche-Lake.jpg' },
-      { name: 'Ooty Lake Boathouse', desc: 'Private row and pedal boating for couples under gentle mist.', img: '/images/Ooty-Lake.png' },
-      { name: 'Government Rose Garden', desc: 'Over 20,000 fragrant rose bushes blooming in tiered arches.', img: '/images/Rose-Garden.jpg' },
-      { name: 'Pykara Lake & Falls', desc: 'Picturesque waterfalls surrounded by dense shola woodland.', img: '/images/pykara.jpg' },
-      { name: 'Doddabetta Summit', desc: 'Watch golden clouds drift across the Nilgiri hills.', img: '/images/Doddabetta.png' }
+      { name: 'Avalanche Sanctuary Lake', desc: 'Tranquil emerald waters fringed by orchids and magnolias.', img: assetUrl('/images/Avalanche-Lake.jpg') },
+      { name: 'Ooty Lake Boathouse', desc: 'Private row and pedal boating for couples under gentle mist.', img: assetUrl('/images/Ooty-Lake.png') },
+      { name: 'Government Rose Garden', desc: 'Over 20,000 fragrant rose bushes blooming in tiered arches.', img: assetUrl('/images/Rose-Garden.jpg') },
+      { name: 'Pykara Lake & Falls', desc: 'Picturesque waterfalls surrounded by dense shola woodland.', img: assetUrl('/images/pykara.jpg') },
+      { name: 'Doddabetta Summit', desc: 'Watch golden clouds drift across the Nilgiri hills.', img: assetUrl('/images/Doddabetta.png') }
     ],
     vehicleOptions: ['Innova Crysta (7 Seater Luxury)', 'Toyota Etios (5 Seater Sedan)', 'Swift Dzire (5 Seater Sedan)'],
     itinerary: [
@@ -223,15 +224,15 @@ export const PACKAGES = [
     badge: 'Popular',
     rating: 4.8,
     reviewCount: 195,
-    image: '/images/Kodaikanal-Lake-Boating.jpg',
+    image: assetUrl('/images/Kodaikanal-Lake-Boating.jpg'),
     gallery: [
-      '/images/Kodaikanal-Lake-Boating.jpg',
-      '/images/Coakers-Walk.png',
-      '/images/Bryant-Park.jpg',
-      '/images/Silver-Cascade-Waterfalls.png',
-      '/images/Pillar-Rocks.jpg',
-      '/images/Pine-Forest.jpg',
-      '/images/Guna-Caves.png',
+      assetUrl('/images/Kodaikanal-Lake-Boating.jpg'),
+      assetUrl('/images/Coakers-Walk.png'),
+      assetUrl('/images/Bryant-Park.jpg'),
+      assetUrl('/images/Silver-Cascade-Waterfalls.png'),
+      assetUrl('/images/Pillar-Rocks.jpg'),
+      assetUrl('/images/Pine-Forest.jpg'),
+      assetUrl('/images/Guna-Caves.png'),
     ],
     shortDescription: 'Escape to the misty hills of Kodaikanal: star-shaped lake, Coaker’s Walk, Pillar Rocks, and pine forests.',
     overview: 'Nestled in the Palani Hills of the Western Ghats, Kodaikanal is the quintessential retreat for nature lovers, honeymooners, and adventure seekers. With Hasna Ooty Tours, enjoy a seamless and comfortable journey in a private car exploring lakes, waterfalls, dense forests, and panoramic viewpoints.',
@@ -247,12 +248,12 @@ export const PACKAGES = [
       'Dolphin’s Nose & Echo Rock'
     ],
     placesCovered: [
-      { name: 'Kodaikanal Lake', desc: 'Star-shaped lake surrounded by weeping willows, cycling paths, and boat clubs.', img: '/images/Kodaikanal-Lake-Boating.jpg' },
-      { name: 'Coaker’s Walk', desc: 'Paved pedestrian path running along the steep mountain edge with valley clouds.', img: '/images/Coakers-Walk.png' },
-      { name: 'Bryant Park', desc: 'Manicured botanical park renowned for rose beds, glasshouses, and flowers.', img: '/images/Bryant-Park.jpg' },
-      { name: 'Pillar Rocks', desc: 'Three towering vertical granite boulders standing 122 meters high.', img: '/images/Pillar-Rocks.jpg' },
-      { name: 'Silver Cascade Waterfalls', desc: 'Rushing 180-foot waterfall formed from Kodai Lake overflow.', img: '/images/Silver-Cascade-Waterfalls.png' },
-      { name: 'Pine Forest', desc: 'Atmospheric pine woods planted in the early 20th century.', img: '/images/Pine-Forest.jpg' }
+      { name: 'Kodaikanal Lake', desc: 'Star-shaped lake surrounded by weeping willows, cycling paths, and boat clubs.', img: assetUrl('/images/Kodaikanal-Lake-Boating.jpg') },
+      { name: 'Coaker’s Walk', desc: 'Paved pedestrian path running along the steep mountain edge with valley clouds.', img: assetUrl('/images/Coakers-Walk.png') },
+      { name: 'Bryant Park', desc: 'Manicured botanical park renowned for rose beds, glasshouses, and flowers.', img: assetUrl('/images/Bryant-Park.jpg') },
+      { name: 'Pillar Rocks', desc: 'Three towering vertical granite boulders standing 122 meters high.', img: assetUrl('/images/Pillar-Rocks.jpg') },
+      { name: 'Silver Cascade Waterfalls', desc: 'Rushing 180-foot waterfall formed from Kodai Lake overflow.', img: assetUrl('/images/Silver-Cascade-Waterfalls.png') },
+      { name: 'Pine Forest', desc: 'Atmospheric pine woods planted in the early 20th century.', img: assetUrl('/images/Pine-Forest.jpg') }
     ],
     vehicleOptions: ['Toyota Innova (7 Seater)', 'Innova Crysta (7 Seater)', 'Swift Dzire (5 Seater)', 'Toyota Etios (5 Seater)'],
     itinerary: [
@@ -296,15 +297,15 @@ export const PACKAGES = [
     badge: 'Scenic Pick',
     rating: 4.9,
     reviewCount: 168,
-    image: '/images/Coffee-Estate-Walk.png',
+    image: assetUrl('/images/Coffee-Estate-Walk.png'),
     gallery: [
-      '/images/Coffee-Estate-Walk.png',
-      '/images/Abbey-Falls.jpg',
-      '/images/Rajas-Seat.png',
-      '/images/Dubare-Elephant-Camp.jpg',
-      '/images/Golden-Temple-Tibetan-Monastery.jpg',
-      '/images/Madikeri-Fort-Museum.jpg',
-      '/images/Omkareshwara-Temple.jpg',
+      assetUrl('/images/Coffee-Estate-Walk.png'),
+      assetUrl('/images/Abbey-Falls.jpg'),
+      assetUrl('/images/Rajas-Seat.png'),
+      assetUrl('/images/Dubare-Elephant-Camp.jpg'),
+      assetUrl('/images/Golden-Temple-Tibetan-Monastery.jpg'),
+      assetUrl('/images/Madikeri-Fort-Museum.jpg'),
+      assetUrl('/images/Omkareshwara-Temple.jpg'),
     ],
     shortDescription: 'Explore the serene coffee estates of Coorg, Abbey Falls, Dubare Elephant Camp, and Tibetan Golden Temple.',
     overview: 'Coorg (Kodagu), also known as the Scotland of India, is a paradise for nature lovers, adventure seekers, and coffee enthusiasts. With Hasna Ooty Tours, enjoy a private car tour through misty mountains, lush coffee plantations, gushing waterfalls, and peaceful monasteries.',
@@ -320,11 +321,11 @@ export const PACKAGES = [
       'Chiklihole Dam & Iruppu Falls'
     ],
     placesCovered: [
-      { name: 'Abbey Falls', desc: 'Stunning 70-foot waterfall tumbling down amidst spice and coffee estates.', img: '/images/Abbey-Falls.jpg' },
-      { name: 'Raja’s Seat', desc: 'Historic garden pavilion where Kodagu kings watched sunset over layered valleys.', img: '/images/Rajas-Seat.png' },
-      { name: 'Dubare Elephant Camp', desc: 'Interact with and observe elephants on the banks of the sacred Cauvery River.', img: '/images/Dubare-Elephant-Camp.jpg' },
-      { name: 'Golden Temple (Bylakuppe)', desc: 'Magnificent Tibetan Buddhist monastery featuring 40-foot gilded statues.', img: '/images/Golden-Temple-Tibetan-Monastery.jpg' },
-      { name: 'Madikeri Fort & Museum', desc: '17th-century palace fort in the heart of Madikeri town.', img: '/images/Madikeri-Fort-Museum.jpg' }
+      { name: 'Abbey Falls', desc: 'Stunning 70-foot waterfall tumbling down amidst spice and coffee estates.', img: assetUrl('/images/Abbey-Falls.jpg') },
+      { name: 'Raja’s Seat', desc: 'Historic garden pavilion where Kodagu kings watched sunset over layered valleys.', img: assetUrl('/images/Rajas-Seat.png') },
+      { name: 'Dubare Elephant Camp', desc: 'Interact with and observe elephants on the banks of the sacred Cauvery River.', img: assetUrl('/images/Dubare-Elephant-Camp.jpg') },
+      { name: 'Golden Temple (Bylakuppe)', desc: 'Magnificent Tibetan Buddhist monastery featuring 40-foot gilded statues.', img: assetUrl('/images/Golden-Temple-Tibetan-Monastery.jpg') },
+      { name: 'Madikeri Fort & Museum', desc: '17th-century palace fort in the heart of Madikeri town.', img: assetUrl('/images/Madikeri-Fort-Museum.jpg') }
     ],
     vehicleOptions: ['Innova Crysta (7 Seater)', 'Toyota Innova (7 Seater)', 'Swift Dzire (5 Seater)', 'Toyota Etios (5 Seater)'],
     itinerary: [
@@ -368,15 +369,15 @@ export const PACKAGES = [
     badge: 'Heritage Choice',
     rating: 4.8,
     reviewCount: 142,
-    image: '/images/Mysore-Palace.jpg',
+    image: assetUrl('/images/Mysore-Palace.jpg'),
     gallery: [
-      '/images/Mysore-Palace.jpg',
-      '/images/Brindavan-Gardens-.jpg',
-      '/images/Chamundi-Hills-scaled.jpg',
-      '/images/St.-Philomenas-Church.jpg',
-      '/images/Mysore-Zoo.jpg',
-      '/images/KRS-Dam.png',
-      '/images/Ranganathittu-Bird-Sanctuary.jpg',
+      assetUrl('/images/Mysore-Palace.jpg'),
+      assetUrl('/images/Brindavan-Gardens-.jpg'),
+      assetUrl('/images/Chamundi-Hills-scaled.jpg'),
+      assetUrl('/images/St.-Philomenas-Church.jpg'),
+      assetUrl('/images/Mysore-Zoo.jpg'),
+      assetUrl('/images/KRS-Dam.png'),
+      assetUrl('/images/Ranganathittu-Bird-Sanctuary.jpg'),
     ],
     shortDescription: 'Experience the grandeur of the City of Palaces, Chamundi Hills, Brindavan Gardens, and historic royal monuments.',
     overview: 'Mysore, the City of Palaces, is famous for its rich cultural heritage, grand royal palaces, magnificent temples, and lush illuminated gardens. Travel in style and comfort with our private car tour services from Ooty, Bangalore, or Mysore city.',
@@ -391,11 +392,11 @@ export const PACKAGES = [
       'Mysore Sand Sculpture Museum'
     ],
     placesCovered: [
-      { name: 'Mysore Palace', desc: 'Indo-Saracenic architectural masterpiece adorned with stained glass and carved wood.', img: '/images/Mysore-Palace.jpg' },
-      { name: 'Brindavan Gardens', desc: 'Terraced ornamental gardens famous for evening illuminated fountains.', img: '/images/Brindavan-Gardens-.jpg' },
-      { name: 'Chamundi Hills', desc: 'Ancient hilltop temple perched 1,000 meters high overlooking Mysore.', img: '/images/Chamundi-Hills-scaled.jpg' },
-      { name: 'St. Philomena’s Cathedral', desc: 'Towering twin spires built in 1936 inspired by Cologne Cathedral.', img: '/images/St.-Philomenas-Church.jpg' },
-      { name: 'Mysore Zoo', desc: 'One of the oldest and best-kept zoological gardens in India.', img: '/images/Mysore-Zoo.jpg' }
+      { name: 'Mysore Palace', desc: 'Indo-Saracenic architectural masterpiece adorned with stained glass and carved wood.', img: assetUrl('/images/Mysore-Palace.jpg') },
+      { name: 'Brindavan Gardens', desc: 'Terraced ornamental gardens famous for evening illuminated fountains.', img: assetUrl('/images/Brindavan-Gardens-.jpg') },
+      { name: 'Chamundi Hills', desc: 'Ancient hilltop temple perched 1,000 meters high overlooking Mysore.', img: assetUrl('/images/Chamundi-Hills-scaled.jpg') },
+      { name: 'St. Philomena’s Cathedral', desc: 'Towering twin spires built in 1936 inspired by Cologne Cathedral.', img: assetUrl('/images/St.-Philomenas-Church.jpg') },
+      { name: 'Mysore Zoo', desc: 'One of the oldest and best-kept zoological gardens in India.', img: assetUrl('/images/Mysore-Zoo.jpg') }
     ],
     vehicleOptions: ['Toyota Innova (7 Seater)', 'Innova Crysta (7 Seater)', 'Toyota Etios (5 Seater)', 'Swift Dzire (5 Seater)'],
     itinerary: [
@@ -433,16 +434,16 @@ export const PACKAGES = [
     badge: 'Nature Lover',
     rating: 4.9,
     reviewCount: 153,
-    image: '/images/Wayanad-Tea-Estates-Tour.jpg',
+    image: assetUrl('/images/Wayanad-Tea-Estates-Tour.jpg'),
     gallery: [
-      '/images/Wayanad-Tea-Estates-Tour.jpg',
-      '/images/Banasura-Sagar-Dam.png',
-      '/images/Soochipara-Waterfalls.jpg',
-      '/images/Edakkal-Caves.jpg',
-      '/images/Pookode-Lake.jpg',
-      '/images/Chembra-Peak.jpg',
-      '/images/Muthanga-Wildlife-Sanctuary.jpg',
-      '/images/Karapuzha-Dam.jpg',
+      assetUrl('/images/Wayanad-Tea-Estates-Tour.jpg'),
+      assetUrl('/images/Banasura-Sagar-Dam.png'),
+      assetUrl('/images/Soochipara-Waterfalls.jpg'),
+      assetUrl('/images/Edakkal-Caves.jpg'),
+      assetUrl('/images/Pookode-Lake.jpg'),
+      assetUrl('/images/Chembra-Peak.jpg'),
+      assetUrl('/images/Muthanga-Wildlife-Sanctuary.jpg'),
+      assetUrl('/images/Karapuzha-Dam.jpg'),
     ],
     shortDescription: 'Lush tea estates, Edakkal caves, Banasura Sagar earthen dam, Soochipara falls, and Muthanga wildlife safari.',
     overview: 'Wayanad, a breathtaking hill station in Kerala, is known for its lush green landscapes, misty mountains, dense forests, waterfalls, and rich wildlife. Travel in total comfort with our private car tour services connecting Ooty, Calicut, and Bangalore.',
@@ -457,11 +458,11 @@ export const PACKAGES = [
       'Wayanad Tea & Spice Estates Tour'
     ],
     placesCovered: [
-      { name: 'Banasura Sagar Dam', desc: 'Largest earthen dam in India, set against the Banasura hills.', img: '/images/Banasura-Sagar-Dam.png' },
-      { name: 'Edakkal Caves', desc: 'Ancient stone age rock carvings etched 1,200 meters above sea level.', img: '/images/Edakkal-Caves.jpg' },
-      { name: 'Soochipara Waterfalls', desc: 'Three-tiered waterfall cascading down sheer rock faces.', img: '/images/Soochipara-Waterfalls.jpg' },
-      { name: 'Pookode Lake', desc: 'Natural freshwater lake fringed by dense evergreen forests.', img: '/images/Pookode-Lake.jpg' },
-      { name: 'Wayanad Tea Estates', desc: 'Endless rolling emerald tea plantations and spice farms.', img: '/images/Wayanad-Tea-Estates-Tour.jpg' }
+      { name: 'Banasura Sagar Dam', desc: 'Largest earthen dam in India, set against the Banasura hills.', img: assetUrl('/images/Banasura-Sagar-Dam.png') },
+      { name: 'Edakkal Caves', desc: 'Ancient stone age rock carvings etched 1,200 meters above sea level.', img: assetUrl('/images/Edakkal-Caves.jpg') },
+      { name: 'Soochipara Waterfalls', desc: 'Three-tiered waterfall cascading down sheer rock faces.', img: assetUrl('/images/Soochipara-Waterfalls.jpg') },
+      { name: 'Pookode Lake', desc: 'Natural freshwater lake fringed by dense evergreen forests.', img: assetUrl('/images/Pookode-Lake.jpg') },
+      { name: 'Wayanad Tea Estates', desc: 'Endless rolling emerald tea plantations and spice farms.', img: assetUrl('/images/Wayanad-Tea-Estates-Tour.jpg') }
     ],
     vehicleOptions: ['Innova Crysta (7 Seater)', 'Toyota Innova (7 Seater)', 'Toyota Etios (5 Seater)', 'Swift Dzire (5 Seater)'],
     itinerary: [
@@ -504,17 +505,17 @@ export const PACKAGES = [
     badge: 'Popular',
     rating: 4.8,
     reviewCount: 128,
-    image: '/images/coimbatore.jpg',
+    image: assetUrl('/images/coimbatore.jpg'),
     gallery: [
-      '/images/coimbatore.jpg',
-      '/images/Marudhamalai-Temple.jpg',
-      '/images/Perur-Pateeswarar-Temple.jpg',
-      '/images/Gedee-Car-Museum.jpg',
-      '/images/VOC-Park.jpg',
-      '/images/TNAU-Botanical-Garden.jpg',
-      '/images/Kovai-Kutralam-Waterfalls.jpg',
-      '/images/Aliyar-Dam.jpg',
-      '/images/Monkey-Falls.jpg',
+      assetUrl('/images/coimbatore.jpg'),
+      assetUrl('/images/Marudhamalai-Temple.jpg'),
+      assetUrl('/images/Perur-Pateeswarar-Temple.jpg'),
+      assetUrl('/images/Gedee-Car-Museum.jpg'),
+      assetUrl('/images/VOC-Park.jpg'),
+      assetUrl('/images/TNAU-Botanical-Garden.jpg'),
+      assetUrl('/images/Kovai-Kutralam-Waterfalls.jpg'),
+      assetUrl('/images/Aliyar-Dam.jpg'),
+      assetUrl('/images/Monkey-Falls.jpg'),
     ],
     shortDescription: 'Explore the Manchester of South India: Marudhamalai Temple, Perur Pateeswarar, Isha Adiyogi, and Gedee Car Museum.',
     overview: 'Coimbatore is a vibrant blend of cultural heritage, ancient spiritual landmarks, modern industry, and scenic foothills. Hasna Ooty Tours offers seamless private car sightseeing and airport transfer packages with professional drivers.',
@@ -528,11 +529,11 @@ export const PACKAGES = [
       'Kovai Kutralam Waterfalls & Siruvani Gateway'
     ],
     placesCovered: [
-      { name: 'Marudhamalai Temple', desc: '12th-century hill shrine set against the backdrop of the Western Ghats.', img: '/images/Marudhamalai-Temple.jpg' },
-      { name: 'Perur Pateeswarar Temple', desc: 'Millennia-old temple with intricately carved pillars depicting dance poses of Shiva.', img: '/images/Perur-Pateeswarar-Temple.jpg' },
-      { name: 'Gedee Car Museum', desc: 'Unique automobile museum featuring vintage cars from Germany, Britain, and America.', img: '/images/Gedee-Car-Museum.jpg' },
-      { name: 'TNAU Botanical Garden', desc: 'Historic 300-acre agricultural university garden with rare flora.', img: '/images/TNAU-Botanical-Garden.jpg' },
-      { name: 'Monkey Falls & Aliyar Dam', desc: 'Scenic waterfalls and dam located on the Pollachi-Valparai road.', img: '/images/Monkey-Falls.jpg' }
+      { name: 'Marudhamalai Temple', desc: '12th-century hill shrine set against the backdrop of the Western Ghats.', img: assetUrl('/images/Marudhamalai-Temple.jpg') },
+      { name: 'Perur Pateeswarar Temple', desc: 'Millennia-old temple with intricately carved pillars depicting dance poses of Shiva.', img: assetUrl('/images/Perur-Pateeswarar-Temple.jpg') },
+      { name: 'Gedee Car Museum', desc: 'Unique automobile museum featuring vintage cars from Germany, Britain, and America.', img: assetUrl('/images/Gedee-Car-Museum.jpg') },
+      { name: 'TNAU Botanical Garden', desc: 'Historic 300-acre agricultural university garden with rare flora.', img: assetUrl('/images/TNAU-Botanical-Garden.jpg') },
+      { name: 'Monkey Falls & Aliyar Dam', desc: 'Scenic waterfalls and dam located on the Pollachi-Valparai road.', img: assetUrl('/images/Monkey-Falls.jpg') }
     ],
     vehicleOptions: ['Swift Dzire (5 Seater)', 'Toyota Etios (5 Seater)', 'Toyota Innova (7 Seater)', 'Innova Crysta (7 Seater)'],
     itinerary: [
@@ -575,13 +576,13 @@ export const PACKAGES = [
     badge: 'Popular',
     rating: 4.9,
     reviewCount: 172,
-    image: '/images/kunnur.jpg',
+    image: assetUrl('/images/kunnur.jpg'),
     gallery: [
-      '/images/kunnur.jpg',
-      '/images/ooty-tours.jpg',
-      '/images/Tea-Factory.png',
-      '/images/Doddabetta.png',
-      '/images/Botanical-Garden-1.png',
+      assetUrl('/images/kunnur.jpg'),
+      assetUrl('/images/ooty-tours.jpg'),
+      assetUrl('/images/Tea-Factory.png'),
+      assetUrl('/images/Doddabetta.png'),
+      assetUrl('/images/Botanical-Garden-1.png'),
     ],
     shortDescription: 'The ultimate Nilgiri combo: Ooty Lake, Doddabetta, Sim’s Park, Lamb’s Rock, and Dolphin’s Nose.',
     overview: 'Experience the best of both Nilgiri hill stations. Day 1 immerses you in Ooty’s signature gardens, tea factories, and lakes, while Day 2 whisks you through Coonoor’s misty tea estates, Sim’s Park, and high cliffs overlooking Catherine Falls.',
@@ -595,10 +596,10 @@ export const PACKAGES = [
       'Tea Garden Walks & Orthodox Factory Tasting'
     ],
     placesCovered: [
-      { name: 'Sim’s Park (Coonoor)', desc: 'Unusual hybrid botanical garden with rare trees and terraced slopes.', img: '/images/kunnur.jpg' },
-      { name: 'Ooty Lake', desc: 'Classic pedal and motor boat rides surrounded by eucalyptus groves.', img: '/images/Ooty-Lake.png' },
-      { name: 'Doddabetta Peak', desc: 'Highest Nilgiri elevation overlooking the blue hills.', img: '/images/Doddabetta.png' },
-      { name: 'Tea Factory & Museum', desc: 'Detailed production overview and hot Nilgiri tea tasting.', img: '/images/Tea-Factory.png' }
+      { name: 'Sim’s Park (Coonoor)', desc: 'Unusual hybrid botanical garden with rare trees and terraced slopes.', img: assetUrl('/images/kunnur.jpg') },
+      { name: 'Ooty Lake', desc: 'Classic pedal and motor boat rides surrounded by eucalyptus groves.', img: assetUrl('/images/Ooty-Lake.png') },
+      { name: 'Doddabetta Peak', desc: 'Highest Nilgiri elevation overlooking the blue hills.', img: assetUrl('/images/Doddabetta.png') },
+      { name: 'Tea Factory & Museum', desc: 'Detailed production overview and hot Nilgiri tea tasting.', img: assetUrl('/images/Tea-Factory.png') }
     ],
     vehicleOptions: ['Innova Crysta (7 Seater)', 'Swift Dzire (5 Seater)', 'Toyota Innova (7 Seater)', 'Toyota Etios (5 Seater)'],
     itinerary: [
@@ -633,12 +634,12 @@ export const PACKAGES = [
     badge: 'Group Special',
     rating: 4.8,
     reviewCount: 110,
-    image: '/images/Mudumalai.jpg',
+    image: assetUrl('/images/Mudumalai.jpg'),
     gallery: [
-      '/images/Mudumalai.jpg',
-      '/images/pykara.jpg',
-      '/images/Avalanche-Lake.jpg',
-      '/images/ooty-tours.jpg',
+      assetUrl('/images/Mudumalai.jpg'),
+      assetUrl('/images/pykara.jpg'),
+      assetUrl('/images/Avalanche-Lake.jpg'),
+      assetUrl('/images/ooty-tours.jpg'),
     ],
     shortDescription: 'Spacious group and friends getaway in 7-seater Innova Crysta or Tempo Traveller: Pykara, Mudumalai safari, and scenic valley drives.',
     overview: 'Looking for an exciting group getaway? Whether it is a college friends reunion, office team outing, or large family gathering, our Group Tour Packages are designed for seamless group travel with maximum comfort in spacious vehicles.',
@@ -651,10 +652,10 @@ export const PACKAGES = [
       'Shooting Spot / Pine Forest Walk'
     ],
     placesCovered: [
-      { name: 'Mudumalai Tiger Reserve', desc: 'Jungle safari observing wild elephants, deer, and gaurs.', img: '/images/Mudumalai.jpg' },
-      { name: 'Pykara Waterfalls & Lake', desc: 'Thrilling group speedboats and relaxing picnic grounds.', img: '/images/pykara.jpg' },
-      { name: 'Ooty Lake', desc: 'Group pedal and motor boat rides.', img: '/images/Ooty-Lake.png' },
-      { name: 'Avalanche Lake', desc: 'Offbeat nature trail with crystal water reflection.', img: '/images/Avalanche-Lake.jpg' }
+      { name: 'Mudumalai Tiger Reserve', desc: 'Jungle safari observing wild elephants, deer, and gaurs.', img: assetUrl('/images/Mudumalai.jpg') },
+      { name: 'Pykara Waterfalls & Lake', desc: 'Thrilling group speedboats and relaxing picnic grounds.', img: assetUrl('/images/pykara.jpg') },
+      { name: 'Ooty Lake', desc: 'Group pedal and motor boat rides.', img: assetUrl('/images/Ooty-Lake.png') },
+      { name: 'Avalanche Lake', desc: 'Offbeat nature trail with crystal water reflection.', img: assetUrl('/images/Avalanche-Lake.jpg') }
     ],
     vehicleOptions: ['Innova Crysta (7 Seater)', 'Toyota Innova (7 Seater)', 'Tempo Traveller (12+1 Seater)'],
     itinerary: [
@@ -694,12 +695,12 @@ export const PACKAGES = [
     badge: 'Adventure',
     rating: 4.9,
     reviewCount: 96,
-    image: '/images/pykara.jpg',
+    image: assetUrl('/images/pykara.jpg'),
     gallery: [
-      '/images/pykara.jpg',
-      '/images/Mudumalai.jpg',
-      '/images/Needle-Rock-Viewpoint.jpg',
-      '/images/Avalanche-Lake.jpg',
+      assetUrl('/images/pykara.jpg'),
+      assetUrl('/images/Mudumalai.jpg'),
+      assetUrl('/images/Needle-Rock-Viewpoint.jpg'),
+      assetUrl('/images/Avalanche-Lake.jpg'),
     ],
     shortDescription: 'Experience the thrilling Kalhatty Ghat road, Mudumalai jungle safari, and serene Pykara Lake speedboating.',
     overview: 'A thrilling full-day circuit departing from Ooty. Descend the dramatic 36 hairpin bends of Kalhatty Ghat to visit the Theppakadu Elephant Camp and Mudumalai Tiger Reserve, followed by a scenic drive to Pykara Lake and its roaring waterfalls.',
@@ -712,9 +713,9 @@ export const PACKAGES = [
       'Shooting Point / Wenlock Downs'
     ],
     placesCovered: [
-      { name: 'Pykara Waterfalls', desc: 'Cascading river rapids surrounded by Nilgiri pines.', img: '/images/pykara.jpg' },
-      { name: 'Mudumalai Tiger Reserve', desc: 'Thick teak and bamboo forests home to elephants, tigers, and leopards.', img: '/images/Mudumalai.jpg' },
-      { name: 'Needle Rock Viewpoint', desc: 'Panoramic cliff overlooking the Mudumalai and Gudalur plains.', img: '/images/Needle-Rock-Viewpoint.jpg' }
+      { name: 'Pykara Waterfalls', desc: 'Cascading river rapids surrounded by Nilgiri pines.', img: assetUrl('/images/pykara.jpg') },
+      { name: 'Mudumalai Tiger Reserve', desc: 'Thick teak and bamboo forests home to elephants, tigers, and leopards.', img: assetUrl('/images/Mudumalai.jpg') },
+      { name: 'Needle Rock Viewpoint', desc: 'Panoramic cliff overlooking the Mudumalai and Gudalur plains.', img: assetUrl('/images/Needle-Rock-Viewpoint.jpg') }
     ],
     vehicleOptions: ['Innova Crysta (7 Seater)', 'Toyota Innova (7 Seater)', 'Swift Dzire (5 Seater)', 'Toyota Etios (5 Seater)'],
     itinerary: [
@@ -754,11 +755,11 @@ export const PACKAGES = [
     badge: 'Offbeat Haven',
     rating: 4.8,
     reviewCount: 78,
-    image: '/images/kotagiri.png',
+    image: assetUrl('/images/kotagiri.png'),
     gallery: [
-      '/images/kotagiri.png',
-      '/images/kunnur.jpg',
-      '/images/Tea-Factory.png',
+      assetUrl('/images/kotagiri.png'),
+      assetUrl('/images/kunnur.jpg'),
+      assetUrl('/images/Tea-Factory.png'),
     ],
     shortDescription: 'Discover the quietest and oldest Nilgiri hill station: Kodanad Viewpoint, Catherine Falls, and pristine tea estates.',
     overview: 'Escape the crowds with our peaceful Kotagiri private car excursion. Known for having one of the best climates in the world, Kotagiri charms travelers with untouched tea trails, the sweeping drop of Catherine Falls, and the majestic Kodanad Viewpoint looking down into the Bhavani Sagar basin.',
@@ -770,8 +771,8 @@ export const PACKAGES = [
       'Elk Falls & Shola Woods'
     ],
     placesCovered: [
-      { name: 'Kotagiri Tea Estates', desc: 'Vast emerald carpets of tea with cool gentle breezes.', img: '/images/kotagiri.png' },
-      { name: 'Sim’s Park Route', desc: 'Scenic connection between Coonoor and Kotagiri.', img: '/images/kunnur.jpg' }
+      { name: 'Kotagiri Tea Estates', desc: 'Vast emerald carpets of tea with cool gentle breezes.', img: assetUrl('/images/kotagiri.png') },
+      { name: 'Sim’s Park Route', desc: 'Scenic connection between Coonoor and Kotagiri.', img: assetUrl('/images/kunnur.jpg') }
     ],
     vehicleOptions: ['Swift Dzire (5 Seater)', 'Toyota Etios (5 Seater)', 'Innova Crysta (7 Seater)'],
     itinerary: [

@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assets';
+
 export const SITE_CONFIG = {
   name: 'Hasna Ooty Tours',
   tagline: 'Your Trusted Partner for Scenic Car Tours in South India',
@@ -11,9 +13,9 @@ export const SITE_CONFIG = {
   mapsUrl: 'https://maps.google.com/?q=Ooty+Nilgiris+Tamil+Nadu',
   hours: '24/7 Customer Support & Travel Desk',
   logos: {
-    dark: '/images/hasnalogo.png',
-    white: '/images/hasnalogow.png',
-    fav: '/images/hasnafav.png',
+    dark: assetUrl('/images/hasnalogo.png'),
+    white: assetUrl('/images/hasnalogow.png'),
+    fav: assetUrl('/images/hasnafav.png'),
   },
   navItems: [
     { label: 'Home', path: '/' },
@@ -29,4 +31,3 @@ export const SITE_CONFIG = {
     { label: 'Hill Driving Safety', value: '100%' },
   ]
 };
-

@@ -1,3 +1,4 @@
+import { assetUrl } from '../utils/assets';
 import React from 'react';
 import { MessageCircle, Phone, Sparkles } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
@@ -15,7 +16,7 @@ export default function FinalCtaBanner() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/bg.jpg"
+          src={assetUrl("/images/bg.jpg")}
           alt="Scenic Ooty Mountain Background"
           className="w-full h-full object-cover object-center brightness-50"
           loading="lazy"
