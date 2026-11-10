@@ -1,4 +1,4 @@
-import { assetUrl } from '../utils/assets';
+import { assetUrl } from '../utils/assets.js';
 import React from 'react';
 import { MessageCircle, Phone, Sparkles } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';

@@ -15,10 +15,11 @@ export function assetUrl(path) {
   }
 
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  const rawBase = import.meta.env.BASE_URL || '/';
+  const rawBase = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL) || '/';
   const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 
   return `${base}${cleanPath}`;
 }
 
 export default assetUrl;
+

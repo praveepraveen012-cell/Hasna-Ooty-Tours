@@ -1,4 +1,4 @@
-import { assetUrl } from '../utils/assets';
+import { assetUrl } from '../utils/assets.js';
 
 export const SITE_CONFIG = {
   name: 'Hasna Ooty Tours',
@@ -13,9 +13,10 @@ export const SITE_CONFIG = {
   mapsUrl: 'https://maps.google.com/?q=Ooty+Nilgiris+Tamil+Nadu',
   hours: '24/7 Customer Support & Travel Desk',
   logos: {
-    dark: assetUrl('/images/hasnalogo.png'),
-    white: assetUrl('/images/hasnalogow.png'),
-    fav: assetUrl('/images/hasnafav.png'),
+    dark: assetUrl('/images/hasna-logo-transparent.png'),
+    white: assetUrl('/images/hasna-logo-transparent.png'),
+    fav: assetUrl('/images/hasna-logo-transparent.png'),
+    original: assetUrl('/images/hasna-logo.jpg'),
   },
   navItems: [
     { label: 'Home', path: '/' },

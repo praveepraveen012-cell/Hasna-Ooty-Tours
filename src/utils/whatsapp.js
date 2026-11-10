@@ -1,4 +1,4 @@
-import { SITE_CONFIG } from '../config/site';
+import { SITE_CONFIG } from '../config/site.js';
 
 /**
  * Encodes and opens WhatsApp in a new tab with the given message

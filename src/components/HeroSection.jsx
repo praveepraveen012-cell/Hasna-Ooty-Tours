@@ -1,4 +1,4 @@
-import { assetUrl } from '../utils/assets';
+import { assetUrl } from '../utils/assets.js';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Compass, ShieldCheck, MapPin, Star, Sparkles } from 'lucide-react';

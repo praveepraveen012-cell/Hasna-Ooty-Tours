@@ -1,4 +1,4 @@
-import { assetUrl } from '../utils/assets';
+import { assetUrl } from '../utils/assets.js';
 import React from 'react';
 import { ShieldCheck, UserCheck, Sliders, DollarSign, Clock, ThumbsUp, Sparkles, CheckCircle2 } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';

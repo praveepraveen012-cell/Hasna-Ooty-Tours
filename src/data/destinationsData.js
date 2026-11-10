@@ -1,4 +1,4 @@
-import { assetUrl } from '../utils/assets';
+import { assetUrl } from '../utils/assets.js';
 export const DESTINATIONS = [
   {
     id: 'ooty',
