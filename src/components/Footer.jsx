@@ -177,15 +177,28 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom copyright line */}
+        {/* Bottom copyright line and Powered By */}
         <div className="pt-8 border-t border-forest-800 flex flex-col md:flex-row items-center justify-between text-xs text-forest-400 gap-4">
-          <p>© {new Date().getFullYear()} Hasna Ooty Tours. All rights reserved. Private car sightseeing and holiday packages.</p>
-          <div className="flex items-center space-x-6 text-forest-300">
+          <p className="text-forest-300">© 2026 Hasna Ooty Tours. All Rights Reserved.</p>
+          
+          <div className="flex items-center space-x-4 sm:space-x-6 text-forest-400 text-[11px] sm:text-xs">
             <span>Direct WhatsApp Booking</span>
             <span>•</span>
             <span>Local Nilgiri Experts</span>
             <span>•</span>
             <span>No Hidden Charges</span>
+          </div>
+
+          <div className="flex items-center space-x-1.5 text-xs text-forest-300">
+            <span>Powered by</span>
+            <a
+              href="https://grexotix.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-accent hover:text-white transition-colors underline decoration-accent/40 hover:decoration-white"
+            >
+              Grexotix
+            </a>
           </div>
         </div>
       </div>
