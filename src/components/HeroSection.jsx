@@ -28,11 +28,11 @@ export default function HeroSection({ onSearch }) {
           fetchPriority="high"
         />
 
-        {/* Ambient Warm Golden Sunburst Glow matching the real sunrise on top-left */}
+        {/* Ambient Warm Golden Sunburst Glow matching the real sunrise center-left */}
         <div
-          className="absolute -top-12 -left-12 w-[600px] h-[500px] pointer-events-none rounded-full"
+          className="absolute -top-10 left-1/4 -translate-x-1/2 w-[700px] h-[550px] pointer-events-none rounded-full"
           style={{
-            background: 'radial-gradient(ellipse at 25% 25%, rgba(245, 158, 69, 0.32) 0%, rgba(245, 158, 69, 0.12) 45%, transparent 75%)'
+            background: 'radial-gradient(ellipse at 50% 40%, rgba(245, 158, 69, 0.30) 0%, rgba(245, 158, 69, 0.10) 50%, transparent 75%)'
           }}
         />
 
