@@ -1,6 +1,6 @@
 import { assetUrl } from '../utils/assets.js';
 import React from 'react';
-import { MessageCircle, Phone, Sparkles } from 'lucide-react';
+import { MessageCircle, Phone, Sparkles, ShieldCheck, Heart } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp } from '../utils/whatsapp';
 
@@ -12,29 +12,37 @@ export default function FinalCtaBanner() {
   };
 
   return (
-    <section className="relative py-20 bg-forest-900 text-white overflow-hidden">
-      {/* Background Image */}
+    <section className="relative py-24 bg-forest-950 text-white overflow-hidden">
+      {/* Background Image with Rich Nilgiri Sunrise Scenery */}
       <div className="absolute inset-0 z-0">
         <img
-          src={assetUrl("/images/bg.jpg")}
-          alt="Scenic Ooty Mountain Background"
-          className="w-full h-full object-cover object-center brightness-50"
+          src={assetUrl("/images/hasna-hero-banner.jpg")}
+          alt="Breathtaking Sunrise over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
+          className="w-full h-full object-cover object-[center_40%] scale-105 transform motion-safe:animate-subtle-zoom filter brightness-[0.85] contrast-[1.08]"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-forest-900/95 via-forest-900/85 to-forest-900/90" />
+        {/* Soft Golden Hour Radial Vignette */}
+        <div
+          className="absolute -top-10 -left-10 w-[500px] h-[400px] pointer-events-none rounded-full"
+          style={{
+            background: 'radial-gradient(ellipse at 30% 30%, rgba(245, 158, 69, 0.28) 0%, transparent 70%)'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-forest-950/92 via-forest-950/80 to-forest-950/92" />
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-transparent to-forest-950/60" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-accent mb-6 border border-white/20">
+        <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-accent mb-6 border border-white/20 shadow-lg">
           <Sparkles className="w-4 h-4 text-accent" />
           <span>Instant WhatsApp Quotations • 24/7 Travel Desk</span>
         </div>
 
-        <h2 className="text-3xl sm:text-5xl font-extrabold font-display leading-tight tracking-tight">
+        <h2 className="text-3xl sm:text-5xl font-extrabold font-display leading-tight tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.7)]">
           Your Dream Ooty Trip Starts Here!
         </h2>
 
-        <p className="mt-4 text-base sm:text-lg text-forest-100 max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-4 text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
           From tranquil boat rides in Ooty Lake to misty tea gardens and panoramic heights at Doddabetta. Let Hasna Ooty Tours handle the driving while you create memories.
         </p>
 
@@ -49,16 +57,26 @@ export default function FinalCtaBanner() {
 
           <a
             href={`tel:${SITE_CONFIG.phoneCall}`}
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base px-6 py-4 rounded-full backdrop-blur-sm border border-white/30 transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base px-6 py-4 rounded-full backdrop-blur-sm border border-white/30 transition-all shadow-md"
           >
             <Phone className="w-4 h-4 text-accent" />
             <span>Call Us: {SITE_CONFIG.phone}</span>
           </a>
         </div>
 
-        <p className="mt-6 text-xs text-forest-300">
-          No upfront payment on website • Direct confirmation with local Ooty team
-        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-300">
+          <span className="flex items-center space-x-1">
+            <ShieldCheck className="w-3.5 h-3.5 text-accent" />
+            <span>No upfront payment on website</span>
+          </span>
+          <span>•</span>
+          <span>Direct confirmation with local Ooty team</span>
+          <span>•</span>
+          <span className="flex items-center space-x-1">
+            <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400" />
+            <span>Trusted by 500+ happy travelers</span>
+          </span>
+        </div>
       </div>
     </section>
   );

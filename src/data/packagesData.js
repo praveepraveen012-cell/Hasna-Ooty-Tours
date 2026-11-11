@@ -83,9 +83,9 @@ export const PACKAGES = [
     badge: 'Family Favorite',
     rating: 4.9,
     reviewCount: 215,
-    image: assetUrl('/images/ooty3.png'),
+    image: assetUrl('/images/hasna-hero-banner.jpg'),
     gallery: [
-      assetUrl('/images/ooty3.png'),
+      assetUrl('/images/hasna-hero-banner.jpg'),
       assetUrl('/images/pykara.jpg'),
       assetUrl('/images/Avalanche-Lake.jpg'),
       assetUrl('/images/Botanical-Garden-1.png'),

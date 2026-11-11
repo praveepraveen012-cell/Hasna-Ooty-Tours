@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, MapPin, Calendar, Users, Car, Navigation } from 'lucide-react';
+import { Search, MapPin, Calendar, Users, Car, Navigation, Sparkles } from 'lucide-react';
 import { DESTINATIONS } from '../data/destinationsData';
 import { TOUR_TYPES } from '../data/tourTypesData';
 
@@ -34,11 +34,62 @@ export default function SearchPanel({ onSearch, defaultValues = {} }) {
   };
 
   return (
-    <div className="w-full bg-white rounded-2xl md:rounded-3xl shadow-search p-4 sm:p-6 border border-slate-100">
+    <div className="w-full bg-white/95 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl shadow-forest-950/40 p-4 sm:p-6 border border-white/60 text-left">
+      {/* MakeMyTrip-style quick category discovery chips */}
+      <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar pb-3 mb-4 text-xs border-b border-slate-100">
+        <span className="text-slate-400 font-semibold shrink-0 flex items-center space-x-1.5">
+          <Sparkles className="w-3.5 h-3.5 text-accent" />
+          <span>Quick Picks:</span>
+        </span>
+        <button
+          type="button"
+          onClick={() => { setDestination('Ooty'); setTourType('Private Car Sightseeing'); }}
+          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
+            destination === 'Ooty' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          }`}
+        >
+          🌿 Ooty 1-Day Tour
+        </button>
+        <button
+          type="button"
+          onClick={() => { setDestination('Coonoor'); setTourType('Family Tour Packages'); }}
+          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
+            destination === 'Coonoor' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          }`}
+        >
+          ☕ Coonoor Tea Estates
+        </button>
+        <button
+          type="button"
+          onClick={() => { setTourType('Honeymoon Packages'); }}
+          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
+            tourType === 'Honeymoon Packages' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          }`}
+        >
+          💑 Honeymoon Specials
+        </button>
+        <button
+          type="button"
+          onClick={() => { setDestination('Kodaikanal'); setTourType('All Tour Types'); }}
+          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
+            destination === 'Kodaikanal' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          }`}
+        >
+          🌲 Kodaikanal
+        </button>
+        <button
+          type="button"
+          onClick={() => { setDestination('All Destinations'); setTourType('All Tour Types'); }}
+          className="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-amber-50 text-accent-dark hover:bg-amber-100 transition-all cursor-pointer border border-amber-200/60"
+        >
+          ✨ View All
+        </button>
+      </div>
+
       <form onSubmit={handleSearchSubmit}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
           {/* Destination */}
-          <div className="bg-slate-50/80 hover:bg-forest-50/50 transition-colors p-3 rounded-2xl border border-slate-200/80 text-left">
+          <div className="bg-slate-50/90 hover:bg-forest-50/60 transition-colors p-3 rounded-2xl border border-slate-200/90 text-left">
             <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1 flex items-center space-x-1">
               <MapPin className="w-3.5 h-3.5 text-nature" />
               <span>Destination</span>
@@ -58,7 +109,7 @@ export default function SearchPanel({ onSearch, defaultValues = {} }) {
           </div>
 
           {/* Travel Date */}
-          <div className="bg-slate-50/80 hover:bg-forest-50/50 transition-colors p-3 rounded-2xl border border-slate-200/80 text-left">
+          <div className="bg-slate-50/90 hover:bg-forest-50/60 transition-colors p-3 rounded-2xl border border-slate-200/90 text-left">
             <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1 flex items-center space-x-1">
               <Calendar className="w-3.5 h-3.5 text-nature" />
               <span>Travel Date</span>
@@ -72,7 +123,7 @@ export default function SearchPanel({ onSearch, defaultValues = {} }) {
           </div>
 
           {/* Number of Travellers */}
-          <div className="bg-slate-50/80 hover:bg-forest-50/50 transition-colors p-3 rounded-2xl border border-slate-200/80 text-left">
+          <div className="bg-slate-50/90 hover:bg-forest-50/60 transition-colors p-3 rounded-2xl border border-slate-200/90 text-left">
             <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1 flex items-center space-x-1">
               <Users className="w-3.5 h-3.5 text-nature" />
               <span>Travellers</span>
@@ -91,7 +142,7 @@ export default function SearchPanel({ onSearch, defaultValues = {} }) {
           </div>
 
           {/* Tour Type */}
-          <div className="bg-slate-50/80 hover:bg-forest-50/50 transition-colors p-3 rounded-2xl border border-slate-200/80 text-left">
+          <div className="bg-slate-50/90 hover:bg-forest-50/60 transition-colors p-3 rounded-2xl border border-slate-200/90 text-left">
             <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1 flex items-center space-x-1">
               <Car className="w-3.5 h-3.5 text-nature" />
               <span>Tour Type</span>
@@ -111,7 +162,7 @@ export default function SearchPanel({ onSearch, defaultValues = {} }) {
           </div>
 
           {/* Pickup Location */}
-          <div className="bg-slate-50/80 hover:bg-forest-50/50 transition-colors p-3 rounded-2xl border border-slate-200/80 text-left">
+          <div className="bg-slate-50/90 hover:bg-forest-50/60 transition-colors p-3 rounded-2xl border border-slate-200/90 text-left">
             <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1 flex items-center space-x-1">
               <Navigation className="w-3.5 h-3.5 text-nature" />
               <span>Pickup City</span>
