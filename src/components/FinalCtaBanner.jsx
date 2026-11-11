@@ -16,16 +16,16 @@ export default function FinalCtaBanner() {
       {/* Background Image with Rich Nilgiri Sunset Scenery */}
       <div className="absolute inset-0 z-0">
         <img
-          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=4khd")}
+          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=v3sunset")}
           alt="Breathtaking Sunset over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
           className="w-full h-full object-cover object-[center_40%] scale-105 transform motion-safe:animate-subtle-zoom"
           loading="lazy"
         />
-        {/* Soft Golden Hour Radial Vignette */}
+        {/* Soft Golden Hour Radial Vignette on the right */}
         <div
-          className="absolute -top-10 -left-10 w-[500px] h-[400px] pointer-events-none rounded-full"
+          className="absolute -top-10 right-10 w-[500px] h-[400px] pointer-events-none rounded-full"
           style={{
-            background: 'radial-gradient(ellipse at 30% 30%, rgba(245, 158, 69, 0.28) 0%, transparent 70%)'
+            background: 'radial-gradient(ellipse at 60% 40%, rgba(245, 158, 69, 0.28) 0%, transparent 70%)'
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-forest-950/92 via-forest-950/80 to-forest-950/92" />

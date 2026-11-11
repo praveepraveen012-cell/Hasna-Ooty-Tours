@@ -21,24 +21,24 @@ export default function HeroSection({ onSearch }) {
       {/* Background Hero Image with Vivid Sunset Lighting & Atmospheric Gradient */}
       <div className="absolute inset-0 z-0">
         <img
-          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=4khd")}
+          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=v3sunset")}
           alt="Breathtaking Sunset over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
-          className="w-full h-full object-cover object-[center_35%] lg:object-[center_30%] scale-105 transform motion-safe:animate-subtle-zoom"
+          className="w-full h-full object-cover object-[center_35%] lg:object-[center_32%] scale-105 transform motion-safe:animate-subtle-zoom"
           loading="eager"
           fetchPriority="high"
         />
 
-        {/* Ambient Warm Golden Sunburst Glow matching the real sunrise center-left */}
+        {/* Ambient Warm Golden Sunburst Glow matching the real sunset on the right */}
         <div
-          className="absolute -top-10 left-1/4 -translate-x-1/2 w-[700px] h-[550px] pointer-events-none rounded-full"
+          className="absolute -top-10 right-10 sm:right-28 w-[650px] h-[550px] pointer-events-none rounded-full"
           style={{
-            background: 'radial-gradient(ellipse at 50% 40%, rgba(245, 158, 69, 0.30) 0%, rgba(245, 158, 69, 0.10) 50%, transparent 75%)'
+            background: 'radial-gradient(ellipse at 50% 40%, rgba(245, 158, 69, 0.32) 0%, rgba(245, 158, 69, 0.12) 50%, transparent 75%)'
           }}
         />
 
         {/* MakeMyTrip-style luxury cinematic vignette: keeps golden sunrays & lush green hills vibrant while guaranteeing contrast for text */}
-        <div className="absolute inset-0 bg-gradient-to-b from-forest-950/80 via-forest-950/40 to-forest-950/92" />
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-forest-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-forest-950/70 via-forest-950/30 to-forest-950/85" />
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-forest-950/40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
