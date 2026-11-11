@@ -83,9 +83,9 @@ export const PACKAGES = [
     badge: 'Family Favorite',
     rating: 4.9,
     reviewCount: 215,
-    image: assetUrl('/images/hasna-sunset-tea-banner.jpg?v=v3sunset'),
+    image: assetUrl('/images/hasna-emerald-ooty-banner.jpg?v=emerald'),
     gallery: [
-      assetUrl('/images/hasna-sunset-tea-banner.jpg?v=v3sunset'),
+      assetUrl('/images/hasna-emerald-ooty-banner.jpg?v=emerald'),
       assetUrl('/images/pykara.jpg'),
       assetUrl('/images/Avalanche-Lake.jpg'),
       assetUrl('/images/Botanical-Garden-1.png'),

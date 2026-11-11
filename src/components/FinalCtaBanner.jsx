@@ -13,19 +13,19 @@ export default function FinalCtaBanner() {
 
   return (
     <section className="relative py-24 bg-forest-950 text-white overflow-hidden">
-      {/* Background Image with Rich Nilgiri Sunset Scenery */}
+      {/* Background Image with Rich Nilgiri Lake & Tea Garden Scenery */}
       <div className="absolute inset-0 z-0">
         <img
-          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=v3sunset")}
-          alt="Breathtaking Sunset over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
+          src={assetUrl("/images/hasna-emerald-ooty-banner.jpg?v=emerald")}
+          alt="Breathtaking Panoramic View of Ooty Nilgiri Tea Gardens & Lake - Hasna Ooty Tours"
           className="w-full h-full object-cover object-[center_40%] scale-105 transform motion-safe:animate-subtle-zoom"
           loading="lazy"
         />
-        {/* Soft Golden Hour Radial Vignette on the right */}
+        {/* Soft Hill Station Vignette */}
         <div
-          className="absolute -top-10 right-10 w-[500px] h-[400px] pointer-events-none rounded-full"
+          className="absolute -top-10 left-1/2 -translate-x-1/2 w-[700px] h-[400px] pointer-events-none rounded-full"
           style={{
-            background: 'radial-gradient(ellipse at 60% 40%, rgba(245, 158, 69, 0.28) 0%, transparent 70%)'
+            background: 'radial-gradient(ellipse at 50% 30%, rgba(255, 255, 255, 0.10) 0%, transparent 70%)'
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-forest-950/92 via-forest-950/80 to-forest-950/92" />

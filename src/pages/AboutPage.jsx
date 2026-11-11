@@ -61,7 +61,7 @@ export default function AboutPage() {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-elevated border-4 border-white">
               <img
-                src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=v3sunset")}
+                src={assetUrl("/images/hasna-emerald-ooty-banner.jpg?v=emerald")}
                 alt="Scenic Ooty Valley Hasna Tours"
                 className="w-full h-[400px] sm:h-[460px] object-cover object-[center_35%]"
               />
