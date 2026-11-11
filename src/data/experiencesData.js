@@ -36,7 +36,7 @@ export const TRAVEL_EXPERIENCES = [
     id: 'scenic-drives',
     title: 'Scenic Drives & Hairpin Bends',
     subtitle: 'Smooth Hill Roads & Cloud Forests',
-    image: assetUrl('/images/hasna-sunset-tea-banner.jpg?v=20261111'),
+    image: assetUrl('/images/hasna-sunset-tea-banner.jpg?v=4khd'),
     description: 'Ride smoothly across the 36 hairpin bends of Kalhatty and scenic Kotagiri ridge roads in our sanitized private cars with experienced hill-terrain drivers.',
     tag: 'Comfortable Ride'
   },

@@ -16,9 +16,9 @@ export default function FinalCtaBanner() {
       {/* Background Image with Rich Nilgiri Sunset Scenery */}
       <div className="absolute inset-0 z-0">
         <img
-          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=20261111")}
+          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=4khd")}
           alt="Breathtaking Sunset over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
-          className="w-full h-full object-cover object-[center_40%] scale-105 transform motion-safe:animate-subtle-zoom filter brightness-[0.85] contrast-[1.08]"
+          className="w-full h-full object-cover object-[center_40%] scale-105 transform motion-safe:animate-subtle-zoom"
           loading="lazy"
         />
         {/* Soft Golden Hour Radial Vignette */}

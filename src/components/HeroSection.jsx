@@ -21,9 +21,9 @@ export default function HeroSection({ onSearch }) {
       {/* Background Hero Image with Vivid Sunset Lighting & Atmospheric Gradient */}
       <div className="absolute inset-0 z-0">
         <img
-          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=20261111")}
+          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=4khd")}
           alt="Breathtaking Sunset over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
-          className="w-full h-full object-cover object-[center_35%] lg:object-[center_30%] scale-105 transform motion-safe:animate-subtle-zoom filter brightness-[0.96] contrast-[1.05]"
+          className="w-full h-full object-cover object-[center_35%] lg:object-[center_30%] scale-105 transform motion-safe:animate-subtle-zoom"
           loading="eager"
           fetchPriority="high"
         />
