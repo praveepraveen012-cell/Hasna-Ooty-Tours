@@ -6,7 +6,7 @@ export const DESTINATIONS = [
     tagline: 'The Queen of Hill Stations',
     shortDescription: 'Lush tea plantations, misty valleys, scenic lakes, and historic botanical gardens in the heart of the Nilgiris.',
     image: assetUrl('/images/ooty-tours.jpg'),
-    heroImage: assetUrl('/images/hasna-hero-banner.jpg'),
+    heroImage: assetUrl('/images/hasna-sunset-tea-banner.jpg?v=20261111'),
     sightseeingHighlights: ['Ooty Lake & Boathouse', 'Doddabetta Peak', 'Botanical Garden', 'Rose Garden', 'Tea Factory & Museum', 'Chocolate Factory', 'Avalanche Lake', 'Needle Rock Viewpoint'],
     popularDuration: 'Full Day / 3 Days 2 Nights',
     distanceFromOoty: 'Base Location',

@@ -13,11 +13,11 @@ export default function FinalCtaBanner() {
 
   return (
     <section className="relative py-24 bg-forest-950 text-white overflow-hidden">
-      {/* Background Image with Rich Nilgiri Sunrise Scenery */}
+      {/* Background Image with Rich Nilgiri Sunset Scenery */}
       <div className="absolute inset-0 z-0">
         <img
-          src={assetUrl("/images/hasna-hero-banner.jpg")}
-          alt="Breathtaking Sunrise over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
+          src={assetUrl("/images/hasna-sunset-tea-banner.jpg?v=20261111")}
+          alt="Breathtaking Sunset over Ooty Nilgiri Tea Hills - Hasna Ooty Tours"
           className="w-full h-full object-cover object-[center_40%] scale-105 transform motion-safe:animate-subtle-zoom filter brightness-[0.85] contrast-[1.08]"
           loading="lazy"
         />
