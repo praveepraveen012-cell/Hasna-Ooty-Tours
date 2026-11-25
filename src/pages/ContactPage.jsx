@@ -70,9 +70,8 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
-          <div className="inline-flex items-center space-x-1.5 text-nature font-bold text-xs uppercase tracking-wider mb-2">
-            <MessageCircle className="w-4 h-4 text-accent" />
-            <span>We’d Love to Hear From You</span>
+          <div className="inline-flex items-center text-nature font-bold text-xs uppercase tracking-wider mb-2">
+            <span>Get in Touch with Our Local Team</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-forest-900 font-display">
             Contact Hasna Ooty Tours

@@ -13,7 +13,7 @@ export default function HowItWorksSection() {
     },
     {
       step: '02',
-      icon: MessageCircle,
+      icon: OfficialWhatsAppIcon,
       title: 'Send Your Enquiry on WhatsApp',
       desc: 'Click "Book Now" or "Enquire" to send your pre-filled tour preference directly to our WhatsApp travel desk.'
     },

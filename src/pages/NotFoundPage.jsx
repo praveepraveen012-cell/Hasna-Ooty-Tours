@@ -1,34 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Compass, Home, MessageCircle } from 'lucide-react';
+import { Compass, Home } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from '../components/OfficialWhatsAppIcon';
 
 export default function NotFoundPage() {
   return (
     <div className="min-h-[70vh] flex items-center justify-center py-16 px-4 bg-surface-light text-center">
-      <div className="max-w-md w-full bg-white p-8 sm:p-10 rounded-3xl shadow-card border border-slate-100">
+      <div className="max-w-md w-full bg-white p-8 sm:p-10 rounded-2xl shadow-md border border-slate-100">
         <div className="w-16 h-16 rounded-full bg-forest-50 text-nature flex items-center justify-center mx-auto mb-4">
-          <Compass className="w-8 h-8 animate-spin-slow" />
+          <Compass className="w-8 h-8" />
         </div>
-        <h1 className="text-4xl font-extrabold text-forest-900 font-display">404</h1>
-        <h2 className="text-xl font-bold text-slate-800 font-display mt-1">Page Not Found</h2>
+        <h1 className="text-4xl font-extrabold text-forest-900 font-heading">404</h1>
+        <h2 className="text-xl font-bold text-slate-800 font-heading mt-1">Page Not Found</h2>
         <p className="text-xs sm:text-sm text-slate-500 mt-2 mb-6">
-          The page you are looking for does not exist or has been moved to another mountain trail.
+          The page you are looking for does not exist or has been moved.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link
             to="/"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 bg-forest-900 hover:bg-forest-800 text-white font-bold text-xs px-5 py-3 rounded-full transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 bg-forest-900 hover:bg-forest-800 text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-colors"
           >
             <Home className="w-4 h-4" />
             <span>Back to Home</span>
           </Link>
           <button
             onClick={() => openWhatsApp("Hello Hasna Ooty Tours, I was browsing your website and need help finding tour package information.")}
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 bg-whatsapp hover:bg-whatsapp-dark text-white font-bold text-xs px-5 py-3 rounded-full transition-all cursor-pointer"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-colors cursor-pointer"
           >
-            <MessageCircle className="w-4 h-4 fill-white" />
+            <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
             <span>Chat on WhatsApp</span>
           </button>
         </div>
