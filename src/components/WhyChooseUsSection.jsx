@@ -41,34 +41,27 @@ export default function WhyChooseUsSection() {
     <section className="py-16 sm:py-20 bg-surface-subtle">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Visual & Trust Card */}
+          {/* Left Column: Image Card */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-elevated border-4 border-white">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg border-2 border-white">
               <img
                 src={assetUrl("/images/Avalanche-Lake.jpg")}
                 alt="Avalanche Lake scenic tour with Hasna Ooty Tours"
-                className="w-full h-[440px] sm:h-[480px] object-cover"
+                className="w-full h-[400px] sm:h-[460px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
-              {/* Floating quote card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white">
-                <p className="text-xs sm:text-sm font-semibold text-forest-900 italic leading-snug">
-                  "Your Journey, Our Responsibility! Sit back, relax, and explore with Hasna Ooty Tours!"
+              <div className="absolute bottom-5 left-5 right-5 text-white">
+                <span className="text-xs font-semibold text-amber-300 uppercase tracking-wider block">
+                  Nilgiris Sightseeing
+                </span>
+                <h3 className="text-lg font-bold font-heading mt-1">
+                  Private Car Tours Across Ooty & South India
+                </h3>
+                <p className="text-xs text-slate-200 mt-1">
+                  Experienced local drivers navigating ghat roads, viewpoints and tea estates with care.
                 </p>
-                <div className="mt-2 flex items-center justify-between">
-                  <span className="text-[11px] font-bold text-nature uppercase tracking-wider">
-                    Hasna Ooty Tours Desk
-                  </span>
-                  <span className="text-xs font-bold text-accent">★★★★★ 4.9/5</span>
-                </div>
               </div>
-            </div>
-
-            {/* Overlapping stat pill */}
-            <div className="absolute -top-4 -right-4 bg-accent text-white py-2 px-4 rounded-2xl shadow-lg flex items-center space-x-2 text-xs font-bold font-display">
-              <Sparkles className="w-4 h-4" />
-              <span>10+ Years Nilgiri Experience</span>
             </div>
           </div>
 

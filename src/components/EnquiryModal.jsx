@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, MessageCircle, Calendar, Users, MapPin, Car, CheckCircle } from 'lucide-react';
+import { X, Calendar, Users, MapPin, Car, CheckCircle } from 'lucide-react';
 import { openWhatsApp, buildPackageBookingMessage } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function EnquiryModal({ isOpen, onClose, initialData = {} }) {
   const [formData, setFormData] = useState({
@@ -191,13 +192,13 @@ export default function EnquiryModal({ isOpen, onClose, initialData = {} }) {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer text-sm"
+                  className="w-full flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold py-3 px-6 rounded-xl shadow-sm hover:shadow transition-colors cursor-pointer text-sm font-heading"
                 >
-                  <MessageCircle className="w-5 h-5 fill-white" />
+                  <OfficialWhatsAppIcon className="w-5 h-5 text-white" />
                   <span>Send Booking Enquiry on WhatsApp</span>
                 </button>
                 <p className="text-[11px] text-center text-slate-400 mt-2">
-                  Opens WhatsApp directly • Instant reply from Hasna Tours team
+                  Direct connection with official Hasna Ooty Tours desk
                 </p>
               </div>
             </form>

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Phone, MessageCircle, Calendar } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function MobileStickyBookingBar() {
   const handleQuickWhatsApp = () => {
@@ -9,7 +10,7 @@ export default function MobileStickyBookingBar() {
   };
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 py-2.5 px-4 md:hidden shadow-elevated">
+    <div className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 py-2.5 px-4 md:hidden shadow-lg">
       <div className="flex items-center space-x-2">
         <a
           href={`tel:${SITE_CONFIG.phoneCall}`}
@@ -21,9 +22,9 @@ export default function MobileStickyBookingBar() {
 
         <button
           onClick={handleQuickWhatsApp}
-          className="flex-[2] flex items-center justify-center space-x-2 py-2.5 px-4 bg-gradient-to-r from-whatsapp to-whatsapp-dark text-white rounded-xl font-bold text-xs shadow-md active:scale-98 transition-all"
+          className="flex-[2] flex items-center justify-center space-x-2 py-2.5 px-4 bg-[#25D366] active:bg-[#20ba5a] text-white rounded-xl font-semibold text-xs shadow-sm transition-colors cursor-pointer"
         >
-          <MessageCircle className="w-4 h-4 fill-white" />
+          <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
           <span>Book on WhatsApp</span>
         </button>
       </div>

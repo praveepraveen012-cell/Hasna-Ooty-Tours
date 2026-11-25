@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, MapPin, Car, Check, Star, MessageCircle, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Clock, MapPin, Car, Check, ArrowRight, ShieldCheck } from 'lucide-react';
 import { openWhatsApp, buildPackageBookingMessage } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function PackageCard({ pkg, onEnquire }) {
   const handleDirectWhatsApp = (e) => {
@@ -63,19 +64,16 @@ export default function PackageCard({ pkg, onEnquire }) {
 
       {/* Card Body */}
       <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
-        {/* Rating and review count */}
+        {/* Package Attributes */}
         <div className="flex items-center justify-between text-xs border-b border-slate-100 pb-3">
-          <div className="flex items-center space-x-1.5">
-            <span className="flex items-center space-x-1 bg-forest-50 text-forest-800 px-2 py-0.5 rounded-md font-bold">
-              <Star className="w-3.5 h-3.5 text-accent fill-accent" />
-              <span>{pkg.rating || 4.9}</span>
-            </span>
-            <span className="text-slate-400">({pkg.reviewCount || 150}+ verified tours)</span>
-          </div>
+          <span className="inline-flex items-center space-x-1.5 text-forest-800 font-medium">
+            <span className="w-1.5 h-1.5 rounded-full bg-nature"></span>
+            <span>Private Sightseeing</span>
+          </span>
 
-          <div className="flex items-center space-x-1 text-nature font-semibold">
+          <div className="flex items-center space-x-1 text-nature font-medium">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>100% Private Car</span>
+            <span>Dedicated Car</span>
           </div>
         </div>
 
@@ -146,9 +144,9 @@ export default function PackageCard({ pkg, onEnquire }) {
 
             <button
               onClick={handleDirectWhatsApp}
-              className="flex items-center justify-center space-x-1.5 px-3 py-2.5 rounded-xl bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white font-bold text-xs shadow-sm hover:shadow transition-all cursor-pointer"
+              className="flex items-center justify-center space-x-1.5 px-3 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs shadow-xs transition-colors cursor-pointer"
             >
-              <MessageCircle className="w-3.5 h-3.5 fill-white" />
+              <OfficialWhatsAppIcon className="w-3.5 h-3.5 text-white" />
               <span>Book Now</span>
             </button>
           </div>

@@ -245,7 +245,7 @@ export default function TourPackagesPage() {
                 className="bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1 text-xs font-semibold text-forest-900 focus:outline-none cursor-pointer"
               >
                 <option value="popular">Popular Packages</option>
-                <option value="rating">Highest Rated</option>
+                <option value="rating">Featured</option>
                 <option value="duration-asc">Duration: Short to Long</option>
                 <option value="duration-desc">Duration: Long to Short</option>
               </select>

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Users, Briefcase, Wind, ShieldCheck, MessageCircle, Check } from 'lucide-react';
+import { Users, Briefcase, Wind, ShieldCheck, Check } from 'lucide-react';
 import { VEHICLES } from '../data/vehiclesData';
 import { openWhatsApp, buildVehicleBookingMessage } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function VehicleFleetSection() {
   const handleBookVehicle = (v) => {
@@ -89,9 +90,9 @@ export default function VehicleFleetSection() {
               <div className="mt-6 pt-3 border-t border-slate-100">
                 <button
                   onClick={() => handleBookVehicle(vehicle)}
-                  className="w-full flex items-center justify-center space-x-2 bg-forest-900 hover:bg-forest-800 text-white font-bold py-2.5 px-4 rounded-xl text-xs shadow-sm hover:shadow transition-all cursor-pointer font-display"
+                  className="w-full flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold py-2.5 px-4 rounded-xl text-xs shadow-xs transition-colors cursor-pointer"
                 >
-                  <MessageCircle className="w-4 h-4 fill-white" />
+                  <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
                   <span>Book This Vehicle</span>
                 </button>
               </div>
@@ -116,9 +117,9 @@ export default function VehicleFleetSection() {
           </div>
           <button
             onClick={() => handleBookVehicle(VEHICLES[4])}
-            className="shrink-0 bg-nature hover:bg-nature-dark text-white font-bold text-xs px-5 py-2.5 rounded-full transition-colors flex items-center space-x-1.5"
+            className="shrink-0 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-colors flex items-center space-x-1.5 cursor-pointer shadow-xs"
           >
-            <MessageCircle className="w-4 h-4 fill-white" />
+            <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
             <span>Enquire Tempo Traveller</span>
           </button>
         </div>

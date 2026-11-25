@@ -2,12 +2,12 @@ import { assetUrl } from '../utils/assets.js';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  MessageCircle, Compass, ShieldCheck, MapPin, Star, Sparkles,
-  Phone, ArrowRight, Award, Clock
+  Compass, ShieldCheck, MapPin, Phone, ArrowRight, Clock, Award
 } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp } from '../utils/whatsapp';
 import SearchPanel from './SearchPanel';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function HeroSection({ onSearch }) {
   const handleHeroWhatsApp = () => {
@@ -17,113 +17,92 @@ export default function HeroSection({ onSearch }) {
   };
 
   return (
-    <div className="relative bg-forest-950 pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden">
+    <div className="relative bg-black pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
       {/* Background Hero Image with Vivid Nilgiri Lake & Tea Hill Panorama */}
       <div className="absolute inset-0 z-0">
         <img
           src={assetUrl("/images/hasna-emerald-ooty-banner.jpg?v=emerald")}
-          alt="Breathtaking Panoramic View of Ooty Nilgiri Tea Gardens & Lake - Hasna Ooty Tours"
-          className="w-full h-full object-cover object-[center_40%] lg:object-[center_35%] scale-105 transform motion-safe:animate-subtle-zoom"
+          alt="Panoramic view of Ooty Emerald Lake and tea gardens - Hasna Ooty Tours"
+          className="w-full h-full object-cover object-[center_40%] lg:object-[center_35%]"
           loading="eager"
           fetchPriority="high"
         />
 
-        {/* Ambient Soft Daylight Hill Station Glow */}
-        <div
-          className="absolute -top-10 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none rounded-full"
-          style={{
-            background: 'radial-gradient(ellipse at 50% 30%, rgba(255, 255, 255, 0.12) 0%, rgba(46, 118, 91, 0.10) 45%, transparent 70%)'
-          }}
-        />
-
-        {/* MakeMyTrip-style luxury cinematic vignette: highlights lush green tea hills & lake while guaranteeing crisp text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-forest-950/80 via-forest-950/45 to-forest-950/90" />
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-forest-950/35" />
+        {/* Balanced Black Overlay: Preserves full visibility of the scenic landscape while ensuring 100% text readability */}
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/75" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Top pill badge with pulsing live indicator */}
-        <div className="inline-flex items-center space-x-2.5 bg-forest-950/60 backdrop-blur-md border border-white/20 text-emerald-200 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-6 shadow-xl">
-          <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
-          </span>
-          <span className="text-white font-medium">The Nilgiris Premier Private Car Sightseeing Service</span>
-          <span className="text-forest-400 hidden sm:inline">•</span>
-          <span className="text-accent hidden sm:inline flex items-center space-x-1">
-            <Sparkles className="w-3.5 h-3.5 inline mr-1" />
-            24/7 Travel Desk
-          </span>
+        {/* Top pill badge */}
+        <div className="inline-flex items-center space-x-2 bg-black/50 backdrop-blur-md border border-white/20 text-emerald-300 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium mb-6 shadow-md">
+          <span className="w-2 h-2 rounded-full bg-emerald-400" />
+          <span className="text-white">Private Car Sightseeing in Ooty & The Nilgiris</span>
+          <span className="text-white/40 hidden sm:inline">•</span>
+          <span className="text-amber-300 hidden sm:inline">24/7 Travel Desk</span>
         </div>
 
-        {/* Destination-focused main heading with elegant gradient & text shadows */}
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mx-auto font-display drop-shadow-[0_4px_16px_rgba(0,0,0,0.7)]">
-          Discover the Beauty of{" "}
-          <span className="relative inline-block">
-            <span className="bg-gradient-to-r from-amber-300 via-amber-200 to-emerald-200 bg-clip-text text-transparent font-extrabold">
-              Ooty
-            </span>
-            <span className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-accent to-emerald-400 rounded-full opacity-80" />
-          </span>{" "}
-          with Hasna Tours
+        {/* Destination-focused main heading in Montserrat */}
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.18] max-w-4xl mx-auto font-heading drop-shadow-md">
+          Discover the Beauty of <span className="text-amber-400">Ooty</span> with Hasna Tours
         </h1>
 
-        {/* Description */}
-        <p className="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-slate-100 max-w-3xl mx-auto leading-relaxed font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
-          Explore breathtaking hill stations, misty tea plantations, cascading waterfalls and unforgettable destinations with comfortable private car tours and customized travel packages.
+        {/* Description in Segoe UI */}
+        <p className="mt-4 sm:mt-5 text-base sm:text-lg lg:text-xl text-slate-100 max-w-3xl mx-auto leading-relaxed font-normal">
+          Explore breathtaking hill stations, misty tea plantations, cascading waterfalls, and scenic viewpoints with comfortable private car tours customized for you and your family.
         </p>
 
-        {/* Primary CTAs with glowing effects */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* Primary Action Buttons */}
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4">
           <Link
             to="/tour-packages"
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-accent via-accent-hover to-accent-dark hover:from-accent-hover hover:to-accent text-white font-bold text-sm sm:text-base px-8 py-4 rounded-full shadow-elevated hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer font-display uppercase tracking-wider group"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-accent hover:bg-accent-hover text-white font-semibold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-md transition-colors cursor-pointer font-heading"
           >
-            <Compass className="w-5 h-5 transition-transform duration-300 group-hover:rotate-45" />
+            <Compass className="w-5 h-5" />
             <span>Explore Tour Packages</span>
-            <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="w-4 h-4 ml-1" />
           </Link>
 
           <button
             onClick={handleHeroWhatsApp}
-            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white font-bold text-sm sm:text-base px-8 py-4 rounded-full shadow-elevated hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer group"
+            className="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-md transition-colors cursor-pointer"
           >
-            <MessageCircle className="w-5 h-5 fill-white transition-transform group-hover:scale-110" />
+            <OfficialWhatsAppIcon className="w-5 h-5 text-white" />
             <span>Book Your Trip on WhatsApp</span>
           </button>
 
           <a
             href={`tel:${SITE_CONFIG.phoneCall}`}
-            className="hidden xl:inline-flex items-center justify-center space-x-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-6 py-4 rounded-full backdrop-blur-md border border-white/25 transition-all shadow-md"
+            className="hidden xl:inline-flex items-center justify-center space-x-2 bg-white/15 hover:bg-white/25 text-white font-semibold text-sm px-6 py-3.5 rounded-full backdrop-blur-sm border border-white/25 transition-colors shadow-sm"
             title="Call Hasna Ooty Tours Direct"
           >
-            <Phone className="w-4 h-4 text-accent" />
+            <Phone className="w-4 h-4 text-amber-300" />
             <span>Call {SITE_CONFIG.phone}</span>
           </a>
         </div>
 
-        {/* Impressive Trust Badges with Micro-Glassmorphism */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs text-slate-100 font-medium">
-          <div className="flex items-center space-x-1.5 bg-forest-950/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/10 shadow-sm">
+        {/* Authentic Factual Service Highlights */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 text-xs text-slate-100 font-medium">
+          <div className="flex items-center space-x-1.5 bg-black/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/15">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>100% Private Chauffeur</span>
+            <span>Dedicated Private Vehicles</span>
           </div>
-          <div className="flex items-center space-x-1.5 bg-forest-950/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/10 shadow-sm">
-            <Star className="w-4 h-4 text-amber-300 fill-amber-300" />
-            <span>4.9/5 Nilgiri Traveler Rating</span>
+          <div className="flex items-center space-x-1.5 bg-black/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/15">
+            <Award className="w-4 h-4 text-amber-300" />
+            <span>Experienced Local Mountain Drivers</span>
           </div>
-          <div className="flex items-center space-x-1.5 bg-forest-950/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/10 shadow-sm">
+          <div className="flex items-center space-x-1.5 bg-black/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/15">
             <MapPin className="w-4 h-4 text-accent" />
             <span>Doorstep Pickup: Ooty & Coimbatore</span>
           </div>
-          <div className="flex items-center space-x-1.5 bg-forest-950/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/10 shadow-sm">
+          <div className="flex items-center space-x-1.5 bg-black/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/15">
             <Clock className="w-4 h-4 text-emerald-300" />
-            <span>Instant Quotes • No Upfront Fee</span>
+            <span>Pay Direct to Driver • Transparent Quotes</span>
           </div>
         </div>
 
-        {/* MakeMyTrip-style Floating Travel Search Panel */}
-        <div className="mt-10 sm:mt-12 max-w-5xl mx-auto transform transition-transform">
+        {/* Search Panel */}
+        <div className="mt-10 sm:mt-12 max-w-5xl mx-auto">
           <SearchPanel onSearch={onSearch} />
         </div>
       </div>

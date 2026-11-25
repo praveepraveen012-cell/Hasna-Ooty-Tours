@@ -50,9 +50,10 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Poppins', 'system-ui', 'sans-serif'],
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['var(--font-body)', 'Segoe UI', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Arial', 'sans-serif'],
+        body: ['var(--font-body)', 'Segoe UI', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Arial', 'sans-serif'],
+        heading: ['var(--font-heading)', 'Montserrat', 'sans-serif'],
+        display: ['var(--font-heading)', 'Montserrat', 'sans-serif'],
       },
       boxShadow: {
         'card': '0 4px 20px -2px rgba(18, 61, 50, 0.08), 0 2px 6px -1px rgba(18, 61, 50, 0.04)',

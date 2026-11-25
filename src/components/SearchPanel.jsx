@@ -34,55 +34,54 @@ export default function SearchPanel({ onSearch, defaultValues = {} }) {
   };
 
   return (
-    <div className="w-full bg-white/95 backdrop-blur-md rounded-2xl md:rounded-3xl shadow-2xl shadow-forest-950/40 p-4 sm:p-6 border border-white/60 text-left">
-      {/* MakeMyTrip-style quick category discovery chips */}
+    <div className="w-full bg-white/95 backdrop-blur-md rounded-2xl shadow-xl p-4 sm:p-6 border border-slate-200/80 text-left">
+      {/* Category discovery chips */}
       <div className="flex items-center space-x-2 overflow-x-auto no-scrollbar pb-3 mb-4 text-xs border-b border-slate-100">
-        <span className="text-slate-400 font-semibold shrink-0 flex items-center space-x-1.5">
-          <Sparkles className="w-3.5 h-3.5 text-accent" />
-          <span>Quick Picks:</span>
+        <span className="text-slate-500 font-semibold shrink-0 font-heading">
+          Quick Filters:
         </span>
         <button
           type="button"
           onClick={() => { setDestination('Ooty'); setTourType('Private Car Sightseeing'); }}
-          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
-            destination === 'Ooty' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
+            destination === 'Ooty' ? 'bg-forest-900 text-white' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
           }`}
         >
-          🌿 Ooty 1-Day Tour
+          Ooty 1-Day Tour
         </button>
         <button
           type="button"
           onClick={() => { setDestination('Coonoor'); setTourType('Family Tour Packages'); }}
-          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
-            destination === 'Coonoor' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
+            destination === 'Coonoor' ? 'bg-forest-900 text-white' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
           }`}
         >
-          ☕ Coonoor Tea Estates
+          Coonoor Tea Estates
         </button>
         <button
           type="button"
           onClick={() => { setTourType('Honeymoon Packages'); }}
-          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
-            tourType === 'Honeymoon Packages' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
+            tourType === 'Honeymoon Packages' ? 'bg-forest-900 text-white' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
           }`}
         >
-          💑 Honeymoon Specials
+          Honeymoon Specials
         </button>
         <button
           type="button"
           onClick={() => { setDestination('Kodaikanal'); setTourType('All Tour Types'); }}
-          className={`px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all cursor-pointer ${
-            destination === 'Kodaikanal' ? 'bg-forest-900 text-white shadow-xs' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
+          className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors cursor-pointer ${
+            destination === 'Kodaikanal' ? 'bg-forest-900 text-white' : 'bg-slate-100 hover:bg-forest-50 text-slate-700'
           }`}
         >
-          🌲 Kodaikanal
+          Kodaikanal
         </button>
         <button
           type="button"
           onClick={() => { setDestination('All Destinations'); setTourType('All Tour Types'); }}
-          className="px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap bg-amber-50 text-accent-dark hover:bg-amber-100 transition-all cursor-pointer border border-amber-200/60"
+          className="px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap bg-amber-50 text-amber-800 hover:bg-amber-100 transition-colors cursor-pointer border border-amber-200/60"
         >
-          ✨ View All
+          View All
         </button>
       </div>
 
@@ -186,13 +185,13 @@ export default function SearchPanel({ onSearch, defaultValues = {} }) {
         {/* Submit action button */}
         <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-slate-100">
           <div className="text-xs text-slate-500 flex items-center space-x-2">
-            <span className="w-2 h-2 rounded-full bg-nature inline-block animate-pulse"></span>
-            <span>All packages include private sanitized car, verified driver & full sightseeing</span>
+            <span className="w-2 h-2 rounded-full bg-nature inline-block"></span>
+            <span>All tours include dedicated sanitized car, local driver and full sightseeing</span>
           </div>
 
           <button
             type="submit"
-            className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-gradient-to-r from-accent to-accent-dark hover:from-accent-hover hover:to-accent text-white font-bold text-sm px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer uppercase tracking-wider font-display"
+            className="w-full sm:w-auto flex items-center justify-center space-x-2 bg-accent hover:bg-accent-hover text-white font-semibold text-sm px-7 py-3 rounded-full shadow-sm hover:shadow-md transition-colors cursor-pointer font-heading"
           >
             <Search className="w-4 h-4" />
             <span>Search Packages</span>

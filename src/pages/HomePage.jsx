@@ -8,7 +8,6 @@ import VehicleFleetSection from '../components/VehicleFleetSection';
 import WhyChooseUsSection from '../components/WhyChooseUsSection';
 import ExperiencesSection from '../components/ExperiencesSection';
 import HowItWorksSection from '../components/HowItWorksSection';
-import TestimonialsSection from '../components/TestimonialsSection';
 import FaqSection from '../components/FaqSection';
 import FinalCtaBanner from '../components/FinalCtaBanner';
 import EnquiryModal from '../components/EnquiryModal';
@@ -51,13 +50,10 @@ export default function HomePage() {
       {/* 9. Simple 3-Step How It Works */}
       <HowItWorksSection />
 
-      {/* 10. Real Testimonials */}
-      <TestimonialsSection />
-
-      {/* 11. Frequently Asked Questions */}
+      {/* 10. Frequently Asked Questions */}
       <FaqSection />
 
-      {/* 12. Final Closing Banner */}
+      {/* 11. Final Closing Banner */}
       <FinalCtaBanner />
 
       {/* Interactive Booking Enquiry Modal */}

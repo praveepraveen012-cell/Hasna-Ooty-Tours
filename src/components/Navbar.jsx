@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { MessageCircle, Phone, Menu, X, MapPin, ChevronRight } from 'lucide-react';
+import { Phone, Menu, X, MapPin, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -115,9 +116,9 @@ export default function Navbar() {
 
             <button
               onClick={handleGeneralWhatsApp}
-              className="flex items-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer"
+              className="flex items-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-full shadow-sm hover:shadow-md transition-colors cursor-pointer"
             >
-              <MessageCircle className="w-4 h-4 fill-white" />
+              <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
               <span>WhatsApp Booking</span>
             </button>
           </div>
@@ -127,9 +128,9 @@ export default function Navbar() {
             <button
               onClick={handleGeneralWhatsApp}
               aria-label="WhatsApp"
-              className="p-2 bg-whatsapp/10 text-whatsapp rounded-full hover:bg-whatsapp/20"
+              className="p-2 bg-[#25D366]/15 text-[#25D366] rounded-full hover:bg-[#25D366]/25"
             >
-              <MessageCircle className="w-5 h-5 fill-whatsapp" />
+              <OfficialWhatsAppIcon className="w-5 h-5 text-[#25D366]" />
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -220,9 +221,9 @@ export default function Navbar() {
             <div className="pt-6 border-t border-slate-100">
               <button
                 onClick={handleGeneralWhatsApp}
-                className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark text-white font-semibold py-3 px-4 rounded-xl shadow-md text-sm"
+                className="w-full flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold py-3 px-4 rounded-xl shadow-sm text-sm transition-colors"
               >
-                <MessageCircle className="w-5 h-5 fill-white" />
+                <OfficialWhatsAppIcon className="w-5 h-5 text-white" />
                 <span>Book on WhatsApp</span>
               </button>
               <p className="text-[11px] text-center text-slate-400 mt-2">

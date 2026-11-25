@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, MessageCircle, ShieldCheck, Clock, Award, ChevronRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ShieldCheck, Clock, Award, ChevronRight } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function Footer() {
   const handleWhatsApp = () => {
@@ -45,8 +46,8 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center space-x-3.5">
-            <div className="w-12 h-12 rounded-xl bg-forest-800 flex items-center justify-center text-whatsapp shrink-0">
-              <MessageCircle className="w-6 h-6 fill-whatsapp" />
+            <div className="w-12 h-12 rounded-xl bg-forest-800 flex items-center justify-center text-[#25D366] shrink-0">
+              <OfficialWhatsAppIcon className="w-6 h-6 text-[#25D366]" />
             </div>
             <div>
               <h4 className="text-white font-semibold text-sm">Instant WhatsApp</h4>
@@ -82,9 +83,9 @@ export default function Footer() {
             <div className="pt-2">
               <button
                 onClick={handleWhatsApp}
-                className="inline-flex items-center space-x-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold text-xs px-4 py-2.5 rounded-full shadow-md transition-colors"
+                className="inline-flex items-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs px-4 py-2.5 rounded-full shadow-sm transition-colors cursor-pointer"
               >
-                <MessageCircle className="w-4 h-4 fill-white" />
+                <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
                 <span>Chat with Us on WhatsApp</span>
               </button>
             </div>
@@ -162,8 +163,8 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center space-x-2.5">
-                <MessageCircle className="w-4 h-4 text-whatsapp shrink-0" />
-                <button onClick={handleWhatsApp} className="hover:text-white transition-colors text-left">
+                <OfficialWhatsAppIcon className="w-4 h-4 text-[#25D366] shrink-0" />
+                <button onClick={handleWhatsApp} className="hover:text-white transition-colors text-left cursor-pointer">
                   {SITE_CONFIG.phone} (WhatsApp)
                 </button>
               </li>

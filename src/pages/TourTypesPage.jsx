@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Compass, Users, Heart, ShieldCheck, Sparkles, ArrowRight, Check } from 'lucide-react';
+import { Compass, Users, Heart, ShieldCheck, ArrowRight, Check } from 'lucide-react';
 import { TOUR_TYPES } from '../data/tourTypesData';
 import { openWhatsApp } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from '../components/OfficialWhatsAppIcon';
 
 export default function TourTypesPage() {
   const handleConsultWhatsApp = (typeName) => {
@@ -109,8 +110,9 @@ export default function TourTypesPage() {
 
                     <button
                       onClick={() => handleConsultWhatsApp(type.name)}
-                      className="inline-flex items-center space-x-1.5 bg-whatsapp hover:bg-whatsapp-dark text-white font-bold text-xs px-5 py-3 rounded-full transition-all shadow-sm cursor-pointer"
+                      className="inline-flex items-center space-x-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs px-5 py-2.5 rounded-full transition-colors shadow-xs cursor-pointer"
                     >
+                      <OfficialWhatsAppIcon className="w-3.5 h-3.5 text-white" />
                       <span>Enquire on WhatsApp</span>
                     </button>
                   </div>

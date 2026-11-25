@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import {
-  Phone, Mail, MapPin, MessageCircle, Clock, Send,
+  Phone, Mail, MapPin, Clock, Send,
   Calendar, Users, Navigation, CheckCircle, Car
 } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp, buildContactEnquiryMessage } from '../utils/whatsapp';
 import { DESTINATIONS } from '../data/destinationsData';
+import OfficialWhatsAppIcon from '../components/OfficialWhatsAppIcon';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -105,8 +106,8 @@ export default function ContactPage() {
           {/* WhatsApp */}
           <div className="bg-white rounded-3xl p-6 shadow-card border border-slate-100 flex flex-col justify-between">
             <div>
-              <div className="w-12 h-12 rounded-2xl bg-whatsapp/10 text-whatsapp flex items-center justify-center mb-4">
-                <MessageCircle className="w-6 h-6 fill-whatsapp" />
+              <div className="w-12 h-12 rounded-2xl bg-[#25D366]/15 text-[#25D366] flex items-center justify-center mb-4">
+                <OfficialWhatsAppIcon className="w-6 h-6 text-[#25D366]" />
               </div>
               <h3 className="text-base font-bold text-forest-900 font-display">WhatsApp Booking</h3>
               <p className="text-xs text-slate-500 mt-1 mb-4">
@@ -115,7 +116,7 @@ export default function ContactPage() {
             </div>
             <button
               onClick={handleDirectWhatsApp}
-              className="text-sm font-bold text-whatsapp hover:underline text-left cursor-pointer"
+              className="text-sm font-bold text-[#25D366] hover:underline text-left cursor-pointer"
             >
               +91 98948 61681 (Chat Now)
             </button>
@@ -350,13 +351,13 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white font-bold py-3.5 px-6 rounded-2xl shadow-lg transition-all duration-200 cursor-pointer text-sm"
+                    className="w-full flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold py-3.5 px-6 rounded-xl shadow-sm hover:shadow transition-colors cursor-pointer text-sm font-heading"
                   >
-                    <Send className="w-4 h-4" />
+                    <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
                     <span>Send Enquiry on WhatsApp</span>
                   </button>
                   <p className="text-[11px] text-center text-slate-400 mt-2">
-                    Validates instantly and launches WhatsApp with all answers formatted.
+                    Validates instantly and launches WhatsApp with all details formatted.
                   </p>
                 </div>
               </form>

@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import {
-  MapPin, Clock, Car, Users, Star, ShieldCheck, Check, X,
-  Calendar, MessageCircle, ArrowLeft, Phone, Share2, Sparkles, Navigation
+  MapPin, Clock, Car, Users, ShieldCheck, Check, X,
+  Calendar, ArrowLeft, Phone, Share2, Sparkles, Navigation
 } from 'lucide-react';
 import { PACKAGES } from '../data/packagesData';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp, buildPackageBookingMessage } from '../utils/whatsapp';
 import EnquiryModal from '../components/EnquiryModal';
+import OfficialWhatsAppIcon from '../components/OfficialWhatsAppIcon';
 
 export default function PackageDetailPage() {
   const { slug } = useParams();
@@ -136,9 +137,9 @@ export default function PackageDetailPage() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
               <button
                 onClick={handleInstantWhatsApp}
-                className="flex items-center justify-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white font-bold px-6 py-3.5 rounded-2xl shadow-md text-sm transition-all"
+                className="flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold px-6 py-3 rounded-xl shadow-xs text-sm transition-colors cursor-pointer"
               >
-                <MessageCircle className="w-5 h-5 fill-white" />
+                <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
                 <span>Instant WhatsApp Quote</span>
               </button>
             </div>
@@ -445,9 +446,9 @@ export default function PackageDetailPage() {
                 {/* Submit to WhatsApp */}
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white font-bold py-3.5 px-4 rounded-2xl shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer text-sm"
+                  className="w-full flex items-center justify-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold py-3 px-4 rounded-xl shadow-xs transition-colors cursor-pointer text-sm font-heading"
                 >
-                  <MessageCircle className="w-5 h-5 fill-white" />
+                  <OfficialWhatsAppIcon className="w-5 h-5 text-white" />
                   <span>Send Booking on WhatsApp</span>
                 </button>
               </form>

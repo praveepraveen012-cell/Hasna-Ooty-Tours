@@ -3,11 +3,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   ShieldCheck, UserCheck, Sliders, DollarSign, Clock,
-  ThumbsUp, Heart, Compass, CheckCircle2, MessageCircle, ArrowRight
+  ThumbsUp, Heart, Compass, CheckCircle2, ArrowRight
 } from 'lucide-react';
 import { SITE_CONFIG } from '../config/site';
 import { openWhatsApp } from '../utils/whatsapp';
 import VehicleFleetSection from '../components/VehicleFleetSection';
+import OfficialWhatsAppIcon from '../components/OfficialWhatsAppIcon';
 
 export default function AboutPage() {
   const handleAboutWhatsApp = () => {
@@ -42,15 +43,15 @@ export default function AboutPage() {
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <button
                 onClick={handleAboutWhatsApp}
-                className="inline-flex items-center space-x-2 bg-gradient-to-r from-whatsapp to-whatsapp-dark hover:from-whatsapp-hover hover:to-whatsapp text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full shadow-md transition-all cursor-pointer"
+                className="inline-flex items-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs sm:text-sm px-6 py-3 rounded-full shadow-sm transition-colors cursor-pointer"
               >
-                <MessageCircle className="w-4 h-4 fill-white" />
+                <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
                 <span>Talk with Our Team on WhatsApp</span>
               </button>
 
               <Link
                 to="/tour-packages"
-                className="inline-flex items-center space-x-1.5 bg-white border border-slate-200 text-forest-800 hover:bg-forest-50 font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full shadow-xs transition-all font-display"
+                className="inline-flex items-center space-x-1.5 bg-white border border-slate-200 text-forest-800 hover:bg-forest-50 font-semibold text-xs sm:text-sm px-6 py-3 rounded-full shadow-xs transition-colors font-heading"
               >
                 <span>Browse Tour Packages</span>
                 <ArrowRight className="w-4 h-4" />

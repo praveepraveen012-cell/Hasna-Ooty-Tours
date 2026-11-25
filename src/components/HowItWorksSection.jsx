@@ -1,6 +1,7 @@
 import React from 'react';
-import { Compass, MessageCircle, CalendarCheck, ArrowRight } from 'lucide-react';
+import { Compass, CalendarCheck } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
+import OfficialWhatsAppIcon from './OfficialWhatsAppIcon';
 
 export default function HowItWorksSection() {
   const steps = [
@@ -74,10 +75,10 @@ export default function HowItWorksSection() {
         <div className="mt-12 text-center">
           <button
             onClick={() => openWhatsApp("Hello Hasna Ooty Tours, I would like to plan a trip with your team. Please guide me through your packages.")}
-            className="inline-flex items-center space-x-2 bg-forest-900 hover:bg-forest-800 text-white font-bold text-sm px-8 py-3.5 rounded-full transition-all shadow-md font-display"
+            className="inline-flex items-center space-x-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-sm px-7 py-3 rounded-full transition-colors shadow-sm cursor-pointer"
           >
-            <MessageCircle className="w-4 h-4 fill-white" />
-            <span>Chat Directly with Our Travel Desk</span>
+            <OfficialWhatsAppIcon className="w-4 h-4 text-white" />
+            <span>Chat with Our Travel Desk</span>
           </button>
         </div>
       </div>
